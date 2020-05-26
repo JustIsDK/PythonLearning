@@ -48,4 +48,3 @@ my_survey.show_result()
 # unittest.main()
 
 
-‘’‘用来测试gitee功能’‘’
