@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="933437bc-0252-4fa7-9929-5260edcfb366" name="Default" comment="2020-07-05练习">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/untitled$zhufangpachong.coverage" NAME="zhufangpachong Coverage Results" MODIFIED="1555642436739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled$dianyingpachong.coverage" NAME="dianyingpachong Coverage Results" MODIFIED="1556086972168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled$Test6.coverage" NAME="Test6 Coverage Results" MODIFIED="1562149026156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test.coverage" NAME="Test Coverage Results" MODIFIED="1584517674772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$P1.coverage" NAME="P1 Coverage Results" MODIFIED="1584692335497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test2.coverage" NAME="Test2 Coverage Results" MODIFIED="1555146046273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/untitled$Test8.coverage" NAME="Test8 Coverage Results" MODIFIED="1562314259784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$wechat.coverage" NAME="wechat Coverage Results" MODIFIED="1562224805962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test3.coverage" NAME="Test3 Coverage Results" MODIFIED="1556597345643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test7.coverage" NAME="Test7 Coverage Results" MODIFIED="1562224873000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test5.coverage" NAME="Test5 Coverage Results" MODIFIED="1562149077131" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>conterx</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GiteePullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="git@gitee.com:/lovemybabyxuan/Study.git" />
+      </set>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/lovemybabyxuan/study.git" />
+      </set>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/venv/Temp.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/venv/FB/player1.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1UBgTqWNWUNS0o96qmmJOEMoKoo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="untitled" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="untitled" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\我的坚果云\文件\私人\Python\untitled\venv\FB" />
+      <recent name="E:\我的坚果云\文件\私人\Python\untitled\venv\OldCode" />
+      <recent name="E:\我的坚果云\文件\私人\Python\untitled\venv" />
+      <recent name="$PROJECT_DIR$/venv" />
+      <recent name="C:\Users\DK\PycharmProjects\untitled" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Demo5">
+    <configuration name="Demo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/FM" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/FM/Demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/FM" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/FM/Demo3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/FM" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/FM/Demo4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/FM" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/FM/Demo5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/FM" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/FM/Demo6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Demo (1)" />
+      <item itemvalue="Python.Demo3" />
+      <item itemvalue="Python.Demo4" />
+      <item itemvalue="Python.Demo5" />
+      <item itemvalue="Python.Demo6" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Demo5" />
+        <item itemvalue="Python.Demo6" />
+        <item itemvalue="Python.Demo (1)" />
+        <item itemvalue="Python.Demo4" />
+        <item itemvalue="Python.Demo3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\lovem\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="933437bc-0252-4fa7-9929-5260edcfb366" name="Default" comment="" />
+      <created>1554690373962</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554690373962</updated>
+      <workItem from="1556604272218" duration="1467000" />
+      <workItem from="1556701045759" duration="4247000" />
+      <workItem from="1557905080748" duration="104000" />
+      <workItem from="1557909995955" duration="1244000" />
+      <workItem from="1558342729713" duration="878000" />
+      <workItem from="1558923854740" duration="598000" />
+      <workItem from="1560410662507" duration="1809000" />
+      <workItem from="1562057600897" duration="11073000" />
+      <workItem from="1562220678758" duration="47000" />
+      <workItem from="1562222218801" duration="10000" />
+      <workItem from="1562225109644" duration="5000" />
+      <workItem from="1562653900148" duration="5034000" />
+      <workItem from="1563870071782" duration="599000" />
+      <workItem from="1568967077158" duration="809000" />
+      <workItem from="1569226980436" duration="2416000" />
+      <workItem from="1574835419287" duration="36000" />
+      <workItem from="1574835823466" duration="11000" />
+      <workItem from="1574835864194" duration="6000" />
+      <workItem from="1574836659323" duration="61000" />
+      <workItem from="1574837575304" duration="1113000" />
+      <workItem from="1575967351106" duration="9795000" />
+      <workItem from="1576654581373" duration="644000" />
+      <workItem from="1576657104540" duration="77000" />
+      <workItem from="1576657224173" duration="17000" />
+      <workItem from="1576658535472" duration="133000" />
+      <workItem from="1576658713695" duration="1441000" />
+      <workItem from="1584955821315" duration="78000" />
+      <workItem from="1584959972755" duration="613000" />
+      <workItem from="1586502960712" duration="1921000" />
+      <workItem from="1587008827659" duration="11231000" />
+      <workItem from="1587358374259" duration="25665000" />
+      <workItem from="1589424782842" duration="2779000" />
+      <workItem from="1589511567279" duration="4857000" />
+      <workItem from="1590129300616" duration="141000" />
+      <workItem from="1590129537339" duration="2884000" />
+      <workItem from="1590393915359" duration="4697000" />
+      <workItem from="1590475545620" duration="6632000" />
+      <workItem from="1590997003864" duration="3749000" />
+      <workItem from="1591081420770" duration="3472000" />
+      <workItem from="1592300091955" duration="1211000" />
+      <workItem from="1592718907325" duration="3288000" />
+      <workItem from="1593001793720" duration="5189000" />
+      <workItem from="1593778737402" duration="2198000" />
+      <workItem from="1593917798704" duration="2455000" />
+      <workItem from="1593927280878" duration="4760000" />
+      <workItem from="1594112803488" duration="6647000" />
+      <workItem from="1594275511157" duration="4584000" />
+      <workItem from="1594394771880" duration="814000" />
+      <workItem from="1594534987483" duration="6061000" />
+      <workItem from="1594614659574" duration="2888000" />
+      <workItem from="1594815066150" duration="1191000" />
+    </task>
+    <task id="LOCAL-00001" summary="学习过程中敲得代码">
+      <created>1590395160901</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590395160901</updated>
+    </task>
+    <task id="LOCAL-00002" summary="11">
+      <created>1590395695576</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590395695576</updated>
+    </task>
+    <task id="LOCAL-00003" summary="学习的代码">
+      <created>1590396728877</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590396728877</updated>
+    </task>
+    <task id="LOCAL-00004" summary="测试gitee上传">
+      <created>1590475700383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590475700383</updated>
+    </task>
+    <task id="LOCAL-00005" summary="测试gitee上传">
+      <created>1590476430046</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590476430046</updated>
+    </task>
+    <task id="LOCAL-00006" summary="测试gitee上传">
+      <created>1590476471637</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1590476471637</updated>
+    </task>
+    <task id="LOCAL-00007" summary="测试gitee上传">
+      <created>1590476629170</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1590476629170</updated>
+    </task>
+    <task id="LOCAL-00008" summary="测试gitee上传">
+      <created>1590478145654</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590478145654</updated>
+    </task>
+    <task id="LOCAL-00009" summary="整理目录">
+      <created>1593004423294</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593004423294</updated>
+    </task>
+    <task id="LOCAL-00010" summary="2020-07-05练习">
+      <created>1593919003235</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1593919003235</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="学习过程中敲得代码" />
+    <MESSAGE value="11" />
+    <MESSAGE value="学习的代码" />
+    <MESSAGE value="测试gitee上传" />
+    <MESSAGE value="整理目录" />
+    <MESSAGE value="2020-07-05练习" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020-07-05练习" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1081" y="222" key="#Inspections" timestamp="1594394787920">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="1081" y="222" key="#Inspections/62.0.1858.1080@62.0.1858.1080" timestamp="1594394787920" />
+    <state x="873" y="402" key="#Notifications" timestamp="1594537284072">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="873" y="402" key="#Notifications/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590476041664" />
+    <state x="873" y="402" key="#Notifications/62.0.1858.1080@62.0.1858.1080" timestamp="1594537284072" />
+    <state x="773" y="280" key="FileChooserDialogImpl" timestamp="1594394887455">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="773" y="280" key="FileChooserDialogImpl/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590588546307" />
+    <state x="511" y="145" key="FileChooserDialogImpl/62.0.1304.768@62.0.1304.768" timestamp="1587441320805" />
+    <state x="773" y="280" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1594394887455" />
+    <state x="841" y="440" key="Gitee.ShareDialog" timestamp="1590475988503">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="841" y="440" key="Gitee.ShareDialog/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590475988503" />
+    <state x="764" y="244" key="Gitee.UntrackedFilesDialog" timestamp="1590476001135">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="764" y="244" key="Gitee.UntrackedFilesDialog/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590476001135" />
+    <state x="863" y="437" key="Github.ShareDialog" timestamp="1590394611311">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="863" y="437" key="Github.ShareDialog/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590394611311" />
+    <state x="772" y="237" key="Github.UntrackedFilesDialog" timestamp="1590394634399">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="772" y="237" key="Github.UntrackedFilesDialog/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590394634399" />
+    <state width="883" height="226" key="GridCell.Tab.0.bottom" timestamp="1594794261761">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="883" height="346" key="GridCell.Tab.0.bottom/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1589800275143" />
+    <state width="670" height="293" key="GridCell.Tab.0.bottom/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1591079971679" />
+    <state width="1224" height="486" key="GridCell.Tab.0.bottom/62.0.1304.768@62.0.1304.768" timestamp="1587441180237" />
+    <state width="873" height="234" key="GridCell.Tab.0.bottom/62.0.1858.1080/11.-1080.1920.1080@11.-1080.1920.1080" timestamp="1591082506684" />
+    <state width="883" height="226" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1594794261761" />
+    <state width="883" height="226" key="GridCell.Tab.0.center" timestamp="1594794261760">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="883" height="346" key="GridCell.Tab.0.center/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1589800275143" />
+    <state width="670" height="293" key="GridCell.Tab.0.center/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1591079971678" />
+    <state width="1224" height="486" key="GridCell.Tab.0.center/62.0.1304.768@62.0.1304.768" timestamp="1587441180237" />
+    <state width="873" height="234" key="GridCell.Tab.0.center/62.0.1858.1080/11.-1080.1920.1080@11.-1080.1920.1080" timestamp="1591082506684" />
+    <state width="883" height="226" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1594794261760" />
+    <state width="883" height="226" key="GridCell.Tab.0.left" timestamp="1594794261760">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="883" height="346" key="GridCell.Tab.0.left/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1589800275143" />
+    <state width="670" height="293" key="GridCell.Tab.0.left/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1591079971675" />
+    <state width="1224" height="486" key="GridCell.Tab.0.left/62.0.1304.768@62.0.1304.768" timestamp="1587441180236" />
+    <state width="873" height="234" key="GridCell.Tab.0.left/62.0.1858.1080/11.-1080.1920.1080@11.-1080.1920.1080" timestamp="1591082506684" />
+    <state width="883" height="226" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1594794261760" />
+    <state width="883" height="226" key="GridCell.Tab.0.right" timestamp="1594794261761">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="883" height="346" key="GridCell.Tab.0.right/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1589800275143" />
+    <state width="670" height="293" key="GridCell.Tab.0.right/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1591079971678" />
+    <state width="1224" height="486" key="GridCell.Tab.0.right/62.0.1304.768@62.0.1304.768" timestamp="1587441180237" />
+    <state width="873" height="234" key="GridCell.Tab.0.right/62.0.1858.1080/11.-1080.1920.1080@11.-1080.1920.1080" timestamp="1591082506684" />
+    <state width="883" height="226" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1594794261761" />
+    <state width="1224" height="296" key="GridCell.Tab.1.bottom" timestamp="1588141304368">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1224" height="296" key="GridCell.Tab.1.bottom/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1588141304368" />
+    <state width="1224" height="296" key="GridCell.Tab.1.center" timestamp="1588141304368">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1224" height="296" key="GridCell.Tab.1.center/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1588141304368" />
+    <state width="1224" height="296" key="GridCell.Tab.1.left" timestamp="1588141304368">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1224" height="296" key="GridCell.Tab.1.left/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1588141304368" />
+    <state width="1224" height="296" key="GridCell.Tab.1.right" timestamp="1588141304368">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state width="1224" height="296" key="GridCell.Tab.1.right/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1588141304368" />
+    <state x="771" y="241" key="RollbackChangesDialog" timestamp="1590395698468">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="771" y="241" key="RollbackChangesDialog/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590395698468" />
+    <state x="513" y="297" key="SettingsEditor" timestamp="1594542735477">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="520" y="168" key="SettingsEditor/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1589512458579" />
+    <state x="284" y="266" key="SettingsEditor/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590588753088" />
+    <state x="513" y="297" key="SettingsEditor/62.0.1858.1080@62.0.1858.1080" timestamp="1594542735477" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2" timestamp="1593927302490">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590478179454" />
+    <state x="583" y="273" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1593927302490" />
+    <state x="784" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590478138431">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="784" y="453" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590478138431" />
+    <state x="687" y="327" key="git4idea.merge.GitPullDialog" timestamp="1590396527549">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="687" y="327" key="git4idea.merge.GitPullDialog/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590396527549" />
+    <state x="843" y="295" width="958" height="680" key="search.everywhere.popup" timestamp="1594542525886">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="843" y="295" width="672" height="678" key="search.everywhere.popup/-1304.142.1304.768/62.0.1858.1080@62.0.1858.1080" timestamp="1587103419530" />
+    <state x="843" y="295" width="958" height="680" key="search.everywhere.popup/-1858.0.1858.1080/62.0.1858.1080@62.0.1858.1080" timestamp="1590476224870" />
+    <state x="610" y="210" width="672" height="483" key="search.everywhere.popup/62.0.1304.768@62.0.1304.768" timestamp="1587440862015" />
+    <state x="843" y="295" width="958" height="680" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1594542525886" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/untitled$Test5.coverage" NAME="Test5 Coverage Results" MODIFIED="1562122150552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$player1.coverage" NAME="player1 Coverage Results" MODIFIED="1590732963295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test8.coverage" NAME="Test8 Coverage Results" MODIFIED="1562934765634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Temp.coverage" NAME="Temp Coverage Results" MODIFIED="1593928424304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$123.coverage" NAME="123 Coverage Results" MODIFIED="1590997492822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Demo4.coverage" NAME="Demo4 Coverage Results" MODIFIED="1594121186943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/FM" />
+    <SUITE FILE_PATH="coverage/untitled$1212.coverage" NAME="1212 Coverage Results" MODIFIED="1590996902605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test3.coverage" NAME="Test3 Coverage Results" MODIFIED="1556704394909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$setting.coverage" NAME="setting Coverage Results" MODIFIED="1576033645067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$P1.coverage" NAME="P1 Coverage Results" MODIFIED="1587441180217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Demo5.coverage" NAME="Demo5 Coverage Results" MODIFIED="1594635920929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/FM" />
+    <SUITE FILE_PATH="coverage/untitled$game1.coverage" NAME="game1 Coverage Results" MODIFIED="1576660830982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Demo__1_.coverage" NAME="Demo (1) Coverage Results" MODIFIED="1594290345323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/FM" />
+    <SUITE FILE_PATH="coverage/untitled$2020_06_24.coverage" NAME="2020-06-24 Coverage Results" MODIFIED="1593003484403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/FM" />
+    <SUITE FILE_PATH="coverage/untitled$Test17.coverage" NAME="Test17 Coverage Results" MODIFIED="1586510305939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test4.coverage" NAME="Test4 Coverage Results" MODIFIED="1562059228099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$IP.coverage" NAME="IP Coverage Results" MODIFIED="1590150124817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Test9.coverage" NAME="Test9 Coverage Results" MODIFIED="1562934779258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/untitled$Demo3.coverage" NAME="Demo3 Coverage Results" MODIFIED="1593935788837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/FM" />
+    <SUITE FILE_PATH="coverage/untitled$Demo6.coverage" NAME="Demo6 Coverage Results" MODIFIED="1594542945087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/FM" />
+  </component>
+</project>

@@ -1,3 +1,5 @@
+import csv
+
 with open('phone_num.csv',mode='w',encoding='utf8',newline='') as f:
     headers = ['编号','手机号码']
     writer = csv.DictWriter(f,fieldnames=headers)
