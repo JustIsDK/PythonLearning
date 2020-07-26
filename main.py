@@ -40,7 +40,16 @@ def creat_suite_CI2():
     suite.addTests(tests)
     return suite
 
+def creat_suite_CI4():
+    suite = unittest.TestSuite()
+    loader = unittest.TestLoader()
+    #使用discover方法可以加载路径下所有文件内的所有用例
+    tests = loader.discover('testcases','test_*')
+    suite.addTests(tests)
+    return suite
+
+
 if __name__ == '__main__':
     runner = unittest.TextTestRunner(verbosity=2)
-    suite = creat_suite_CI3()
+    suite = creat_suite_CI4()
     runner.run(suite)
