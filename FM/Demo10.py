@@ -10,10 +10,12 @@ class Test1(unittest.TestCase):
 
     def test01(self):
         assert True
+        print('test01成功了\n')
 
     @need_windows
     def test02(self):
         assert True
+        print('这条跳过了\n')
 
     @unittest.skip('这次不执行')
     def test03(self):
