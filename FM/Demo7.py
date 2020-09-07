@@ -45,3 +45,11 @@
 #         break
 
 #就是个注释
+
+#
+# def area(x):
+#     s = 3.14 * x**2
+#     return s
+#
+#
+# print(area(3))
