@@ -79,7 +79,7 @@ print(browser.get_cookies())
 # label_element = browser.find_element_by_id("kw") #通过id查找元素
 # label_element = browser.find_element_by_class_name("s_ipt") #通过类目查找元素
 # label_element = browser.find_element_by_tag_name("")   #通常标签名称查找元素
-# label_element = browser.find_element_by_name("wd")    #通过name查找名称元素
+# label_element = browser.find_element_by_name("wd").in    #通过name查找名称元素
 # label_element = browser.find_element_by_xpath("//input[@id='kw']")  #通过xpath来查找元素
 
 # button_element = browser.find_element_by_id("su")
