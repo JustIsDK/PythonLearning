@@ -6,5 +6,5 @@ for i in range(0,10000):
     # print(f.name())
     # print(f.ssn())
     # print(f.email())
-    print(f.phone_number())
+    print(f.ssn(min_age=18, max_age=45, gender=None))
 
