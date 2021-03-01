@@ -20,3 +20,37 @@
 #     print("新数组："+str(a))
 
 
+# def sumjishu():
+#     jishu = 0
+#     for i in range(1,5000):
+#         if i%2 != 0:
+#             jishu = i + jishu
+#     print(jishu)
+#
+# sumjishu()
+
+
+# class Human():
+#     def name(self):
+#         print('haha')
+#
+#     def age(self):
+#         print(18)
+#
+#     def height(self):
+#         print('185cm')
+#
+#     def weight(self):
+#         print('60kg')
+#
+#     def tell(self):
+#         self.height()
+#         self.weight()
+#         self.age()
+#         self.name()
+#
+# if __name__ == '__main__':
+#     human = Human()
+#     human.tell()
+
+
