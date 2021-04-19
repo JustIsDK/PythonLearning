@@ -6,25 +6,33 @@
 #         if arr[j]>arr[j+1]:
 #              arr[j],arr[j+1]=arr[j+1],arr[j]
 #             return arr
-'''
-a=['a','d','c','d','c','f','d']
-b=[]
-for i in a:
-    if i in b:
-        pass
-    else:
-        b.append(i)
 
-print(b)
-'''
+# a=['a','d','c','d','c','f','d']
+# b=[]
+# for i in a:
+#     if i in b:
+#         pass
+#     else:
+#         b.append(i)
+#
+# print(b)
+#
 
 '''
 python的格式缩进很重要，
 这个是注释，不删也能运行
 '''
 
-def fab(n):
-    a,b=0,1
-    for x in range (n):
-        a,b=b,a+b
-    print (a,b)
+# def fab(n):
+#     a,b=0,1
+#     for x in range (n):
+#         a,b=b,a+b
+#     print (a,b)
+
+'''
+如果我们更改了代码，然后是需要提交并且推送到远端仓库的
+需要这么操作
+首先点击右上角的  这个commit的按钮  ctrl+k  是快捷键
+就会变成这个样子，现在写的就是你的提交说明，也就是改动了什么
+然后点击  commit+push
+'''
