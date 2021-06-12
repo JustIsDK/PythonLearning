@@ -16,7 +16,9 @@
 #         b.append(i)
 #
 # print(b)
-#
+
+
+
 
 '''
 python的格式缩进很重要，
@@ -49,3 +51,129 @@ OK，明白了么明白
 这个就是我刚刚提交的，所以现在你的版本和远端一致了
 你以后需要改就该你这个文件的，或者新建代码文件，专门给你放个路径吧
 '''
+
+
+'''d={'name':'xiaoming','age':'20'}
+
+print(d)'''
+
+
+"""l=[1,2,3,4,5,6]
+
+for x in l:
+    if x>3:
+    print(x)"""
+
+"""打印100以内的奇数"""
+"""a=1
+while a<100:
+    print(a)
+    a=a+2"""
+
+
+"""打印 100 以内的偶数之和"""
+"""sum=0
+a=1
+while a<101:
+    sum=sum+a
+    a=a+2
+print(sum)
+"""
+
+# 打印成绩:60 以下不及格,60-90 及格,90 以上优秀
+# num=int(input('请输入一个成绩:')) #input里面的是字符串类型,需要把他转化为int类型
+# if num<60:
+#     print('不及格')
+# elif 60 <= num < 90:
+#     print('及格')
+# elif 90<=num<=100:
+#     print('优秀')
+# else:
+#     print('输入的成绩不合法')
+
+# if False:
+#     print('False')
+# else:
+#     print('True')
+
+
+# # 将字符串中重复的字符去掉并计算出重复字符出现的字数,
+#
+# s='helloworld'
+# a=set(s)
+# print(f'去除重复数据后值为:{a},拼接为字符串之后为:{"".join(a)}')
+# for x in a:
+#     print(f'{x}在字符串{s}中出现的{s.count(x)}的次数')
+
+
+# range函数  生成序列
+# for i in range(5):
+#     print(i)
+
+
+# 用 for语句计算 1-100 偶数之和
+# sum=0
+# for i in range(0,101,2):
+#     sum=sum+i
+# print(sum)
+
+# a=sum(range(0,101,2))
+# print(a)
+
+
+# break中断
+# a=1
+# while True:
+#     if a>10:
+#         break
+#     a=a+1
+#     print(a)
+
+
+# a=1
+# while True:
+#     break
+#     print('a')
+
+# for x in range(10):
+#     print(x)
+#     if x==3:
+#         break
+
+# 当在多层嵌套循环语句中使用 break 时,break只能中断当前所在循环,比如以下的 for 循环
+# while True:
+#     for x in range(10):
+#         if x==3:
+#             break
+#         print('执行for...')
+#     print('执行的 while...')
+
+# while True:
+#     for x in range(10):
+#         print('执行for...')
+#     print('执行的 while...')
+#     break
+
+
+# continue 跳出当前循环继续执行
+# for x in range(10):
+#     print('before...',x)
+#     if x==3:
+#         continue
+#     print('after...',x)
+
+# for x in range (3):
+#     print(x)
+#     if x==1:
+#         break
+# else:
+#     print('helloworld')
+
+
+# 打印 1-100 之间的质数
+for x in range(2,100):
+    for n in range (2,x):
+        if (x/2!=0):
+            break
+    else:
+        print(f'{x}为质数')
