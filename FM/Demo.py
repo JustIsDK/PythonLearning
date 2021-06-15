@@ -43,13 +43,13 @@
 #     if i>8:
 #         print(i)
 
-import collections
-
-a = [1,1,1,13,3,4,5,6,6,6,6,5,5,5,4,4,4,4]
-b = collections.Counter(a)
-print(b)
-print(b.keys())
-print(b.values())
+# import collections
+#
+# a = [1,1,1,13,3,4,5,6,6,6,6,5,5,5,4,4,4,4]
+# b = collections.Counter(a)
+# print(b)
+# print(b.keys())
+# print(b.values())
 
 
 
@@ -71,3 +71,13 @@ print(b.values())
 #         num2.append(i)
 #
 # print(num2)
+
+
+def f(a,l=[]):
+    l.append(a)
+    return l
+    print(l)
+
+print(f(1))
+print(f(2))
+print(f(3))
