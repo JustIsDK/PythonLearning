@@ -171,9 +171,301 @@ print(sum)
 
 
 # 打印 1-100 之间的质数
-for x in range(2,100):
-    for n in range (2,x):
-        if (x/2!=0):
-            break
-    else:
-        print(f'{x}为质数')
+# for x in range(2,100):
+#     for n in range (2,x):
+#         if (x/2!=0):
+#             break
+#     else:
+#         print(f'{x}为质数')
+
+
+# a=[1,2,3,4,5]
+# b=['a','b','c','d','e']
+# c=dict(zip(b,a))
+# for key,value in c.items():
+#     print(key,value)
+
+# def say_hello():   # 定义函数
+#     # pass  函数执行体的占位符,没有特殊含义,只是让程序不要报错
+#     print('hello world')
+#
+# say_hello()   #调用函数
+
+# 返回值
+# def add():
+#     a=1+1
+#     return a  #a有返回值
+# def bcc():
+#     b=1+2  # b 没有返回值
+#
+# c=add()
+# d=bcc()
+# print (c,d)
+
+# 返回值是什么就返回什么,不会打印 print里面的值
+# def a():
+#     return True
+#     print('helloworld')
+# i=a()
+# print(i)
+
+
+# sum=0
+# a=0
+# while True:
+#     sum=sum+a
+#     a=a+1
+#     if a>100:
+#         break
+# print(sum)
+
+# 定义一个参数,计算 50-100 之和
+# def sum_1_n(m,n):#定义一个参数m,n,调用函数的时候传递参数即可
+#     sum=0
+#     a=m
+#     for i in range(1,101):
+#         sum=sum+a
+#         a = a + 1
+#         if i>n:
+#             break
+#
+#     print(sum)
+#     return sum
+# x=sum_1_n(50,100)
+# y=sum_1_n(10,50)
+# print(x+y)
+
+
+
+# 输入两个数值,自动计算两个数值之间数值之和
+
+# def sum_n_m(m,n):
+#     sum=0
+#     for x in range(m,n+1):
+#         sum=sum+x
+#     return sum
+#
+# a=int(input("请输入一个数字:"))
+# b=int(input('请输入一个数字:'))
+# if a>=b:
+#     print('第一个数字不可大于第二个数字')
+# else:
+#
+#     print(f'{a}-{b}之和:{sum_n_m(a,b)}')
+
+
+# b=1,
+# print(type(b))
+#
+# c=[1,2,3]
+# print(type(c))
+
+
+# 加上*可以传任意长度
+# def say(*names):
+#     for x in names:
+#         print(x)
+# a=(1,2,3)
+# say(*a)
+
+
+# a=1000,2432,442,567
+
+# def avg(*nums):
+#     sum=0
+#     for x in nums:
+#         sum=sum+x
+#     print ("和为",sum)
+#     print('平均值为',sum/len(nums))
+#
+# avg(1000,2432,442,567)
+
+# 元组/列表/字符串可以拆包
+# def a(*args):
+#     for x in args:
+#         print(x)
+# i=1,2,3,4
+# a(*i)
+
+
+# def x(**kwdjd):
+#     print(kwdjd,type(kwdjd))
+# x()
+
+# 求出这个班级里面的成绩之和以及平均成绩,需要打印出他们的名字以及成绩,
+# 则需要设置一个字典的函数:**
+# def f(**kwargs):
+#     print(kwargs)
+#     sum=0
+#     for k,v in kwargs.items():
+#         sum=sum+v
+#
+#     print('他们的',len(kwargs),'个人的总成绩为',sum,sep='')
+#     print('他们的平均成绩为',sum/len(kwargs),sep="")
+#
+# d={"xiaoming":100,"xiaoli":100}
+# f(**d)
+#
+# 传参的顺序:*arg/**kwargs
+# def f(a1,*args,a2,**kwargs):
+#     print('a1',a1)
+#     print('args',args)
+#     print('a2',a2)
+#     print('kwargs',kwargs)
+# f(1,2,3,4,5,a2=100,a3=34,a4=98)
+
+# 面试题:结果为 5
+# a=5
+# def f(arg=a):
+#     print(arg)
+# i=6
+# # f()
+# l = []
+# def f(a):
+#     l.append(a)
+#     return l
+# # print(f(1))
+# print(f(2))
+# print(f(3))
+
+
+# def x_y_c(x,y,z):
+#     return
+#
+# g=lambda x,y,z:x+2*y+z
+# print(g(1,2,3))
+
+
+# def f():
+#     return "hello world"
+#
+# def g(func):
+#     w=func()
+#     print (w)
+#
+# g(f)
+
+
+# def f(name,age=10,*args,**kwargs):
+#     if age==10:
+#         print('helloworld')
+# f()   #name 为必传参数
+
+# 创建文件 data,为写入权限,并且写入 helloworld,写入后关闭文件
+# 读取文本里的数据
+# f=open('./data.txt',encoding='utf8')
+# print(f.readlines(13))
+
+# ATM 取钱输入密码  密码最多输入三次,输错退出
+# a=input('请输入密码:')
+# count=1
+# while count<3:
+#     if a=='8888':
+#         print('输入正确')
+#         break
+#     else:
+#         a=input(f'第{count}次输入错误,请重新输入:')
+#         count=count+1
+#         if count>=3:
+#             print('输入次数超限')
+
+
+
+# ATM 取款,输入三次不可再次输入,输入非数字报错
+# count=1
+# while count<=3:
+#     try:
+#         a=int(input(f'第{count}输入密码:'))
+#         if a==8888:
+#             print('输入正确')
+#             break
+#         else:
+#             print('输入错误,请重试')
+#             count=count+1
+#     except ValueError:
+#         print('输入的字符不合法,请重新输入')
+#         count=count+1
+#
+# print('欢迎下次再来')
+
+
+# try/except ValueError语句(处理异常情况,try下面是正常情况,except后面是异常情况需要执行的)
+
+# try:
+#     A=int(input('请输入数字:'))
+#     print(A)
+#
+# except ValueError:
+#     print('语法错误')
+
+
+# 计算1+1,输入上限为三次
+# count=1
+# while True:
+#     try:
+#         a=int(input('1+1=:'))
+#         if a==2:
+#             print('恭喜')
+#             break
+#         else:
+#             print(f'第{count}次的答案错误请重新输入')
+#             count = count + 1
+#         if count>3:
+#             print('错误输入达到上限,不可输入')
+#             break
+#     except ValueError:
+#         print('输入有误,请重试')
+
+# 可以多次使用 try,另外 try 和 except必须要组合使用
+# except 里面可包含多个错误值
+
+# while True:
+#     try:
+#         a=1/0
+#         print('++++++')
+#     except (ValueError,IOError,IndexError,TypeError,ZeroDivisionError):
+#         print('错了吧')
+#     try:
+#         b='123'[sd]
+#         print('++++++')
+#     except (ValueError,IOError,IndexError,TypeError,ZeroDivisionError,NameError):
+#         print('重新来')
+#         break
+
+
+
+# 异常信息别名exception as e
+# def add(x,y):
+#     try:
+#
+#         return (x+y)
+#
+#     except Exception as e:
+#         print('引发异常',e)
+#         raise
+#
+# a1=add(1,2)
+# a2=add('12','123')
+# a3=add(a1,a2)
+
+# try:
+#     a=10/0
+# except :
+#     print('有异常')
+# finally:
+#     print('hahahah')
+
+
+def f():
+    raise Exception
+
+def d():
+    try:
+        if f():
+            print('yes')
+        else:
+            print('no')
+    except:
+        print('异常')
+d()
+
