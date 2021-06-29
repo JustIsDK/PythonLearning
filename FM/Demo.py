@@ -72,6 +72,15 @@
 #
 # print(num2)
 
+# def sum(a):
+#     def _sum(b):
+#         return a+b
+#     return _sum
+#
+#
+# c = sum(89)
+# print(c)
+
 
 # def f(a,l=[]):
 #     l.append(a)
@@ -81,3 +90,20 @@
 # print(f(1))
 # print(f(2))
 # print(f(3))
+
+# def factorial(n):
+#
+#     # 错误处理
+#     if not isinstance(n, int):  # 仅限整形
+#         raise TypeError("Sorry. 'n' must be an integer.")
+#     if n < 0:  # 仅限 0 和 正数
+#         raise ValueError("Sorry. 'n' must be zero or positive.")
+#
+#     def inner_factorial(n):
+#         if n <= 1:
+#             return 1
+#         return n * inner_factorial(n - 1)
+#     return inner_factorial(n)
+#
+#
+# print(factorial('n'))
