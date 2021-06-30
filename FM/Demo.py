@@ -108,8 +108,8 @@
 #
 # print(factorial('n'))
 
-for i in range(4,20):
-    if i<10:
-        print('UAT_Product_'+'00'+str(i))
-    else:
-        print('UAT_Product_' + '0' + str(i))
+# for i in range(4,20):
+#     if i<10:
+#         print('UAT_Product_'+'00'+str(i))
+#     else:
+#         print('UAT_Product_' + '0' + str(i))
