@@ -2,8 +2,9 @@ import pytest
 
 import PytestDemo
 '''这个是引入另一个文件中的方法，那个文件中的是被测方法'''
+list_1 = (1,2,3,4,5)
 
-@pytest.mark.parametrize("data,expection",[((1,2,3,4,5),5),((2,3,4,5,6),6)])
+@pytest.mark.parametrize("data,expection",[(list_1,5),((2,3,4,5,6),6)])
 
 
 def test_max(data,expection):
