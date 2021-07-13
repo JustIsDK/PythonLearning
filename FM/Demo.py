@@ -114,25 +114,27 @@
 #     else:
 #         print('UAT_Product_' + '0' + str(i))
 
-class Solution:
-    def twoSum(self, nums, target):
-        dic = {}
-        length = len(nums)
-        for i in range(0, length):
-            for j in range(i + 1, length):
-                sum = nums[i] + nums[j]
-                dic[sum] = (i, j)
+# class Solution:
+#     def twoSum(self, nums, target):
+#         dic = {}
+#         length = len(nums)
+#         for i in range(0, length):
+#             for j in range(i + 1, length):
+#                 sum = nums[i] + nums[j]
+#                 dic[sum] = (i, j)
+#
+#         if target in dic:
+#             newlist = dic[target]
+#             outlist = []
+#             for x in range (0,2):
+#                 outlist.append(newlist[x])
+#             print(outlist)
+#         else:
+#             print('There is no result')
+#
+# # nums = [2,7,11,15]
+# nums = [3,2,4]
+# nnn = Solution()
+# nnn.twoSum(nums= nums,target=6)
 
-        if target in dic:
-            newlist = dic[target]
-            outlist = []
-            for x in range (0,2):
-                outlist.append(newlist[x])
-            print(outlist)
-        else:
-            print('There is no result')
 
-# nums = [2,7,11,15]
-nums = [3,2,4]
-nnn = Solution()
-nnn.twoSum(nums= nums,target=6)
