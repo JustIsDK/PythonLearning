@@ -8,8 +8,18 @@ import requests
 #
 # print(res.text)
 
-data = {"key1":"value1","key2":"value2"}
+# data = {"key1":"value1","key2":"value2"}
+#
+# res = requests.get(url="http://httpbin.org/get",params=data)
+#
+# print(res.url)
+# print(res.headers)
 
-res = requests.get(url="http://httpbin.org/get",params=data)
+# res = requests.get(url="https://www.imooc.com/static/img/index/logo2020.png")
+# print(res.content)
 
-print(res.url)
+res =  requests.get(url="http://httpbin.org/ip")
+
+print(res.json()["origin"])
+print(res.status_code)
+print(res.request.headers)
