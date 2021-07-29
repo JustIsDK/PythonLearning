@@ -114,6 +114,9 @@
 #     else:
 #         print('UAT_Product_' + '0' + str(i))
 
+
+#  求能得到和为目标数字的两数
+#
 # class Solution:
 #     def twoSum(self, nums, target):
 #         dic = {}
