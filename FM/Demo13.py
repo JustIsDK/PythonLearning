@@ -1,17 +1,19 @@
-import pymysql
+# import pymysql
 from selenium import webdriver
 import time
-from selenium.webdriver.chrome.options import Options
-tc = webdriver.Chrome(executable_path="/Users/dk/chromedriver")
-tc.get('https://www.baidu.com/')
+options = webdriver.ChromeOptions()
+options.binary_location = "C:\DK\Software\Chrome\App\chrome.exe"
+tc = webdriver.Chrome(executable_path="C:\DK\Software\Chrome\chromedriver.exe",options=options)
+tc.get("https://www.baidu.com")
+time.sleep(10)
 print('打开网页成功')
-tc.find_element_by_id('kw').send_keys('这个是 UI 自动化输入的文字')
+tc.find_element_by_xpath('//*[@id="username"]').send_keys('395522344@qq.com')
 print('输入测试成功')
 time.sleep(2)
 print('间歇性休眠成功')
-tc.find_element_by_id('su').click()
-print('点击搜索成功')
-time.sleep(2)
+# tc.find_element_by_id('su').click()
+# print('点击搜索成功')
+# time.sleep(2)
 tc.close()
 
 
