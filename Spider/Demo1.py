@@ -18,8 +18,13 @@ import requests
 # res = requests.get(url="https://www.imooc.com/static/img/index/logo2020.png")
 # print(res.content)
 
-res =  requests.get(url="http://httpbin.org/ip")
+# res =  requests.get(url="http://httpbin.org/ip")
+#
+# print(res.json()["origin"])
+# print(res.status_code)
+# print(res.request.headers)
 
-print(res.json()["origin"])
-print(res.status_code)
-print(res.request.headers)
+
+# print(sum([for i in range(1,101)]))
+# print(sum([i for i in range(1,101)]))
+print(sum(range(1,101)))
