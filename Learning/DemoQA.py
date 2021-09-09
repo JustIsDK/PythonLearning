@@ -2,7 +2,7 @@ import unittest
 import requests
 
 class GetToken(unittest.TestCase):
-    def get_qa_token(self):
+    def test_get_qa_token(self):
         get_header = {
             'origin': 'https://uat-ecp-site.adidas.com.cn',
             'referer': 'https://uat-ecp-site.adidas.com.cn/',
@@ -15,7 +15,6 @@ class GetToken(unittest.TestCase):
         }
         url = 'https://sit-auth-api.adidas.com.cn/v1/users/login/sms'
 
-        r = requests.post(url=url,data=get_post,headers=get_header)
-        print(r.json())
-        # accesstoken = r.json()[data.accesstoken]
-        # print(accesstoken)
+        r = requests.post(url=url,data=get_post,headers=get_header,verify=False)
+        accesstoken = r.json()['data']['access_token']
+        print(accesstoken)
