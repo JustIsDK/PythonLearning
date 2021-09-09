@@ -14,7 +14,7 @@ class Testpost(unittest.TestCase):
             "topic_tags":"",
             "_csrf":""
         }
-        r = requests.post(url=domainurl,data=post_json)
+        r = requests.post(url=domainurl,data=post_json,verify=False)
         print(r.json())
         self.assertEqual(r.status_code,401)
         self.assertFalse(r.json()['success'])
