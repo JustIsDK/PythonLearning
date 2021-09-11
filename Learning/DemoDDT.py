@@ -1,5 +1,5 @@
 import unittest
-from ddt import ddt,data
+from ddt import ddt,data,unpack,file_data
 import requests
 
 corpid = "ww88fc20d87e4cdfa1"
@@ -48,6 +48,30 @@ class TestDDT(unittest.TestCase):
         }
         r = requests.post(url=url,json=postdata)
         self.assertIsNot(r.json()['errmsg'],'ok')
+
+    @file_data('./test_date.json')
+    def test_3add_meetingroom(self,name,expect_msg):
+        url = f"https://qyapi.weixin.qq.com/cgi-bin/oa/meetingroom/add?access_token={test_data['token']}"
+        postdata = {
+            "name": f"{name}",
+            "capacity": 10,
+            "city": "深圳",
+            "building": "腾讯大厦",
+            "floor": "18F",
+            "equipment": [1, 2, 3],
+            "coordinate":
+                {
+                    "latitude": "22.540503",
+                    "longitude": "113.934528"
+                }
+        }
+
+        r = requests.post(url=url, json=postdata)
+        self.assertEqual(40058,r.json()['errcode'])
+        self.assertIn(expect_msg,r.json()["errmsg"])
+
+
+
 
 
 
