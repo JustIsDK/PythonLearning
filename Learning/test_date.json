@@ -1,0 +1,10 @@
+{
+  "name长度超过30个字符":{
+    "name": "1234567890123456789012345678901",
+    "expect_msg": "name exceed max utf8 words 30"
+  },
+  "name值已经存在": {
+    "name": "18F-会议室",
+    "expect_msg": "meetingroom name exist"
+  }
+}
