@@ -3,7 +3,7 @@
 """
 import csv
 import os
-data_dir = os.path.join(os.path.dirname(__file__),'../data')
+data_dir = os.path.join(os.path.dirname(__file__), '../OldCode/data')
 if not os.path.exists(data_dir):
     os.mkdir(data_dir)
 

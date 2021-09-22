@@ -1,12 +1,10 @@
-from ddt import ddt,data,file_data
-import unittest
+from ddt import file_data
 import random
 import unittest
-from ddt import  ddt,data,unpack
-from bussiness.main_model import MainModel
+from ddt import  ddt,data
+
 
 # 定义test类<必须继承 unittest.TestCase>
-from pom.base import BaseUtil
 
 
 def get_radom_date():

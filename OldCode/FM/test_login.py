@@ -1,6 +1,6 @@
 import unittest
-from ddt import  ddt,data,unpack,file_data
-from bussiness.main_model import MainModel
+from ddt import  ddt, file_data
+from OldCode.bussiness.main_model import MainModel
 
 # 定义test类<必须继承 unittest.TestCase>
 from pom.base import BaseUtil

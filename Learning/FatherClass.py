@@ -9,7 +9,20 @@ class B(A):
         self.token = '1212121212'
         self.name = 'xiaowang'#继承后重写了父类的方法
 
+class C:
+    def  __init__(self,token='123456'):
+        self.name = 'CCCCCCC'
+        self.token = token
+        
+class D(C):
+    def __init__(self,token='123456'):
+        super(D, self).__init__(token)
+        self.baseurl = 'http://www.wx.com'
+
 if __name__ == '__main__':
-    b = B()
-    print(b.name)
-    print(b.token)
+    # b = B()
+    # print(b.name)
+    # print(b.token)
+    d = D()
+    print(d.token)
+    print(d.baseurl)

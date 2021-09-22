@@ -1,5 +1,5 @@
 from pom.main_page import MainPage
-from bussiness.user_model import UserModel
+from OldCode.bussiness.user_model import UserModel
 
 class MainModel:
 
