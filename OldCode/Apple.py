@@ -2,8 +2,8 @@ import requests
 import time
 import random
 
-
 Phone = 1
+n = 0
 while Phone == 1:
     url = 'https://www.apple.com.cn/shop/pickup-message-recommendations?mt=compact&searchNearby=true&store=R705&product=MLHC3CH/A'
     header = {
@@ -29,9 +29,13 @@ while Phone == 1:
     nums = str(num)
     numss = nums[0:2]
     text3 = texts[14:18]
+    n = n +1
+
     if text3 == '今日无货':
+
         timetext = str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-        print(text1 + numss + text2+timetext)
+        print(text1 + numss + text2 + timetext)
+
     else:
 
         Phone = 2
@@ -39,6 +43,8 @@ while Phone == 1:
         print('有货啦!!!!!')
 
     sleeptime = random.choice(range(20))
+
+    print(f'这是第{n}次尝试')
 
     print('本次休息了'+str(sleeptime)+'秒~~')
 
