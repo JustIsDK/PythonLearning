@@ -8,9 +8,9 @@ browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))  #�
 
 browser.get('http://www.baidu.com')
 search = browser.find_element(By.ID,'kw')
-breakpoint()
+# breakpoint()
 search.send_keys('python')
-breakpoint()
+# breakpoint()
 search.send_keys(Keys.ENTER)   #此处调用此方法会导致浏览器闪退
-breakpoint()
+# breakpoint()
 
