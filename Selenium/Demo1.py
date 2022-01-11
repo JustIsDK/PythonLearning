@@ -13,6 +13,3 @@ search.send_keys('python')
 # breakpoint()
 search.send_keys(Keys.ENTER)   #此处调用此方法会导致浏览器闪退
 # breakpoint()
-
-
-
