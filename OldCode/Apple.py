@@ -60,3 +60,5 @@ while Phone == 1:
     time.sleep(sleeptime)
 
     # print(r.json()['body']['noSimilarModelsText'])
+
+    "ceui "
