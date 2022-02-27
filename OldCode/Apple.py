@@ -5,7 +5,7 @@ import random
 Phone = 1
 n = 0
 while Phone == 1:
-    url = 'https://www.apple.com.cn/shop/pickup-message-recommendations?mt=compact&searchNearby=true&store=R705&product=MLHC3CH/A'
+    url = 'https://www.apple.com.cn/shop/pickup-message-recommendations?mt=compact&searchNearby=true&store=R401&product=MLH83CH/A'
     header = {
         "cookie": "dssf=1; dssid2=d75fafa6-130e-4b36-8d98-220e9816872f; as_sfa=Mnxjbnxjbnx8emhfQ058Y29uc3VtZXJ8aW50ZXJuZXR8MHwwfDE; as_uct=2; "
                   "rtsid=%7BCN%3D%7Bt%3Da%3Bi%3DR705%3B%7D%3B%7D; "
@@ -51,7 +51,7 @@ while Phone == 1:
         requests.post(url=' https://maker.ifttt.com/trigger/iphone13/with/key/cNJnZXBLjJK_fneljUa4vP')
         print('有货啦!!!!!')
 
-    sleeptime = random.choice(range(20,50))
+    sleeptime = random.choice(range(10))
 
     print(f'这是第{n}次尝试')
 
