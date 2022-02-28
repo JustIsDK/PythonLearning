@@ -8,33 +8,31 @@ baseurl = 'https://btbtt16.com/'
 url = 'https://btbtt16.com/thread-index-fid-981-tid-4497137.htm'
 headers =  {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'}
 
-def openurl(url,headers,title):
+def firststep(url,headers):
     r = requests.get(url=url, headers=headers)
+    #请求url获取html
     soup = bfs(r.text, 'lxml')
+    #用lxml解析成为对象
     data = soup.select('td >div[class="attachlist"] >table >tr >td >a[rel = "nofollow"]')
+    #使用xpath找到目标列表
     dwl = {}
+    #新建空字典用来存放下载链接，其实用列表应该也足够了
     for i in range(len(data)):
-        # print(data[i])
-        # print()
+        #循环取列表中的项
         newurl = baseurl + str(data[i].get('href'))
-
-        filename = str(data[i].text[60:64])
+        #获取href属性的值，也就是种子的链接url
+        filename = str(data[i].text[61:63])
+        #截取种子的名字
         dwl[filename] = newurl
-        # print(filename + ':' +  newurl)
-        # print()
-    print(downloadlinks)
+        #为字典赋值，截取的标号：新链接
+
+    print (dwl)
+    #打印出新的字典
+
+#
+# def nextstep(downloadlinks):
+#     for
 
 
 
-    # data = soup.select('body > div > table:nth-child(2) > tbody > tr:nth-child(1) > td.post_td > div.attachlist > table > tbody > tr > td:nth-child(1) > a')
-    # print(data)
-    # print(val)
-
-    # downloadUrl = baseurl + data[0].get('href')
-    # print(downloadUrl)
-    # getFile(downloadUrl, title)
-
-
-#cnblogs.com/aionwu/p/14952238.html   例子的网址,明天继续研究
-
-openurl(url=url,headers=headers,title='test')
+firststep(url=url,headers=headers)
