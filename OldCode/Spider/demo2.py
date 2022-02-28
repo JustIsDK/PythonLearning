@@ -15,7 +15,7 @@ def firststep(url,headers):
     #用lxml解析成为对象
     data = soup.select('td >div[class="attachlist"] >table >tr >td >a[rel = "nofollow"]')
     #使用xpath找到目标列表
-    dwl = {}
+    dwl = []
     #新建空字典用来存放下载链接，其实用列表应该也足够了
     for i in range(len(data)):
         #循环取列表中的项
@@ -23,11 +23,14 @@ def firststep(url,headers):
         #获取href属性的值，也就是种子的链接url
         filename = str(data[i].text[61:63])
         #截取种子的名字
-        dwl[filename] = newurl
+        dwl.append(newurl)
         #为字典赋值，截取的标号：新链接
+        print(filename+':'+newurl)
+        print()
 
-    print (dwl)
-    #打印出新的字典
+    # print (dwl)
+    #打印出新的列表
+# def getfile(url):
 
 #
 # def nextstep(downloadlinks):
