@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bfs
 import pandas as pd
+import re
 from urllib.request import urlretrieve
 import  os
 baseurl = 'https://btbtt16.com/'
@@ -9,9 +10,24 @@ headers =  {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit
 
 def openurl(url,headers,title):
     r = requests.get(url=url, headers=headers)
-    val = bfs(r.text, 'lxml')
-    data = val.select('body > div > table:nth-child(2) > tbody > tr:nth-child(1) > td.post_td > div.attachlist > table > tbody > tr > td:nth-child(1) > a')
-    print(data)
+    soup = bfs(r.text, 'lxml')
+    data = soup.select('td >div[class="attachlist"] >table >tr >td >a[rel = "nofollow"]')
+    dwl = {}
+    for i in range(len(data)):
+        # print(data[i])
+        # print()
+        newurl = baseurl + str(data[i].get('href'))
+
+        filename = str(data[i].text[60:64])
+        dwl[filename] = newurl
+        # print(filename + ':' +  newurl)
+        # print()
+    print(downloadlinks)
+
+
+
+    # data = soup.select('body > div > table:nth-child(2) > tbody > tr:nth-child(1) > td.post_td > div.attachlist > table > tbody > tr > td:nth-child(1) > a')
+    # print(data)
     # print(val)
 
     # downloadUrl = baseurl + data[0].get('href')
