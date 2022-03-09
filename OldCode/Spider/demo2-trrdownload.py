@@ -16,7 +16,7 @@ def firststep(url,headers,baseurl):
         #循环取列表中的项
         newurl = baseurl + str(data[i].get('href'))
         #获取href属性的值，也就是种子的链接url
-        filename = str(data[i].text[61:63])
+        # filename = str(data[i].text[61:63])
         #截取种子的名字，用作展示，不过我没有存下来
         dwl.append(newurl)
         #为列表增加值
