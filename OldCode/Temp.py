@@ -65,8 +65,10 @@
 
 #---------------------------------------------
 
+"""
+内部函数包含对外部作用域的引用而非全局作用域的引用，该内部函数就是闭包函数
+"""
 
-# 内部函数包含对外部作用域的引用而非全局作用域的引用，该内部函数就是闭包函数
 # def fun():
 #     name = 'jack'
 #     #这样的情况下，inner就是闭包函数
@@ -85,8 +87,10 @@
 
 #---------------------------------------------
 
+"""
+匿名函数-功能简单的一句话函数
+"""
 
-# 匿名函数-功能简单的一句话函数
 # def fun(x):
 #     return x**x
 #
@@ -98,9 +102,11 @@
 
 #---------------------------------------------
 
+"""
+递归函数  经典例子斐波那契数列 但是py的递归深度只有997
+但是我们可以通过sys库的set方法来改变递归深度
+"""
 
-#递归函数  经典例子斐波那契数列 但是py的递归深度只有997
-#但是我们可以通过sys库的set方法来改变递归深度
 # import sys
 # print(sys.setrecursionlimit(100000))
 # def f(n):
@@ -127,9 +133,13 @@
 # print(fib(5))
 
 #---------------------------------------------
-#装饰器的理解
-#以下操作便实现了装饰器的原理
-#不改变原函数的功能下增加功能
+
+"""
+装饰器的理解
+以下操作便实现了装饰器的原理
+不改变原函数的功能下增加功能
+"""
+
 # import time
 #
 # def funny():
@@ -150,7 +160,11 @@
 # #这里就是在调用inner函数,而inner函数又调用了funny函数
 # funny()
 #------------------------------------------------------
-#如果使用装饰器的形式的话可以改成下面这样
+
+"""
+如果使用装饰器的形式的话可以改成下面这样
+"""
+
 # import time
 # def timer(fun):
 #     def inner():
@@ -167,8 +181,11 @@
 # funny()
 
 #---------------------------------------------
-#
-# # 迭代器和生成器
+
+"""
+迭代器和生成器
+"""
+
 # from _collections_abc import Iterable
 #
 # lst = [i for i in range(1,11)]
@@ -186,20 +203,61 @@
 
 #---------------------------------------------
 
-#生成器函数 generator
+"""
+生成器函数 generator
+"""
 
-def fun():
-    a = 1
-    print('i have a')
-    #和return的区别在于return会结束当前运行,后面的不会运行,而yield不会
-    #有这个关键字就是生成器函数
-    yield a
-    b = 2
-    print('i have b')
-    yield b
+# def fun():
+#     a = 1
+#     print('i have a')
+#     #和return的区别在于return会结束当前运行,后面的不会运行,而yield不会
+#     #有这个关键字就是生成器函数
+#     yield a
+#     b = 2
+#     print('i have b')
+#     yield b
+#
+# funny = fun()
+# print(funny)
+# print(next(funny))
+# print(next(funny))
 
-funny = fun()
-print(funny)
-print(next(funny))
-print(next(funny))
+#---------------------------------------------
+
+# s = 'aAsmr3idd4bgs7Dlsf9eAF'
+#
+# s1 = ''
+#
+# for i in s:
+#     if i.isdigit():
+#         s1 +=  i
+#
+# print(s1)
+
+
+#---------------------------------------------
+
+"""
+输入一行字符,统计其中有多少个单词，每两个单词之间以空格隔开。
+"""
+
+# def calc():
+#     flag = '1'
+#     while flag == '1':
+#         a = input('Please input you words: ')
+#         res = a.split(' ')
+#         res1 = []
+#         for i in res:
+#             if i == '':
+#                 pass
+#             else:
+#                 res1.append(i)
+#         num = len(res1)
+#         print(f'There are {num} words')
+#         flag = input('If you want to continue,please input "1" \n'
+#                      'If you want to exit,please input "2"\n'
+#                      'Please input your answer: ')
+#
+# calc()
+
 
