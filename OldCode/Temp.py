@@ -241,23 +241,59 @@
 输入一行字符,统计其中有多少个单词，每两个单词之间以空格隔开。
 """
 
-# def calc():
-#     flag = '1'
-#     while flag == '1':
-#         a = input('Please input you words: ')
-#         res = a.split(' ')
-#         res1 = []
-#         for i in res:
-#             if i == '':
-#                 pass
-#             else:
-#                 res1.append(i)
-#         num = len(res1)
-#         print(f'There are {num} words')
-#         flag = input('If you want to continue,please input "1" \n'
-#                      'If you want to exit,please input "2"\n'
-#                      'Please input your answer: ')
-#
-# calc()
+def calc():
+    flag = '1'
+    while flag == '1':
+        a = input('Please input you words: ')
+        res = a.split(' ')
+        res1 = []
+        for i in res:
+            if i == '':
+                pass
+            else:
+                res1.append(i)
+        num = len(res1)
+        print(f'There are {num} words')
+        flag = input('If you want to continue,please input "1" \n'
+                     'If you want to exit,please input "2"\n'
+                     'Please input your answer: ')
 
 
+#------------------------------------------------------------------------
+
+'''
+生成年月日
+'''
+
+import random
+def monthday():
+    bigm = [1,3,5,7,8,10,12]
+    smallm = [4,6,9,11]
+    specialm = 2
+    year = random.randint(1960,2022)
+    month = random.randint(1,12)
+    if month in bigm:
+        day = random.randint(1,32)
+    elif month in smallm:
+        day = random.randint(1,31)
+    elif month == specialm:
+        day = random.randint(1,29)
+    if day <=9:
+        day = '0'+str(day)
+    if month <=9:
+        month = '0'+str(month)
+    return (str(year)+' '+str(month)+' '+str(day))
+
+
+
+#------------------------------------------------------------------------
+'''
+董小娜的练习
+'''
+# i = [{'a':1,'b':[11,22,33,55]},[111,222,333],{121,212,313,414}]
+# # s=i[1]
+# # s[1]=22
+# s=i[0]['b']
+# s[1]=44
+
+print(s)
