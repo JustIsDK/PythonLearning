@@ -456,17 +456,356 @@ print(sum)
 #     print('hahahah')
 
 
-def f():
-    raise Exception
+# def f():
+#     raise Exception
+#
+# def d():
+#     try:
+#         if f():
+#             print('yes')
+#         else:
+#             print('no')
+#     except:
+#         print('异常')
+# d()
+#
+# '''测试新电脑'''
 
-def d():
-    try:
-        if f():
-            print('yes')
-        else:
-            print('no')
-    except:
-        print('异常')
-d()
 
-'''测试新电脑'''
+
+
+# b='积分:655'
+# # print(len(b))
+# # print(b[1])
+# # print(b[-3])
+# # print(b[::-1])
+# # print(b[1:3:2])
+# print(b[1:3:])
+
+# 定义函数
+# def sayhello():
+#     print('hello world')
+#
+# # 函数只有在调用的时候才会执行
+# sayhello()
+
+
+
+# def sum100():
+#     s = 0
+#     for i in range(1,101):
+#         s = s+i
+#     print(s)
+#
+# # 调用函数
+# sum100()
+
+
+# n 为函数的参数，可以理解为一个变量
+# def sum100(n):
+#     print(f'计算1-{n}之和：',end='')
+#     s = 0
+#     for i in range(1,n+1):
+#         s = s+i
+#     print(s)
+#
+# # 调用函数
+# sum100(100)
+#
+# sum100(10000)
+#
+# sum100(2345)
+
+
+# i=0
+# for i in range(1,100):
+#     i=i+1
+# print(i)
+
+# class Person:
+#     name = "张三" # 类变量
+#     age = 20     # 类变量
+
+# # 访问类变量
+# print(Person.name)
+# print(Person.age)
+#
+# # 实例化类
+# p1 = Person() # 实例化对象赋值给 p1 变量
+# print(p1.name,p1.age)
+# p1.name = "xiaoming" # 更改实例化对象的属性值
+# p1.age = 10
+# p2 = Person()
+# print(p2.name,p2.age)
+# p2.name = "lisi"
+# p2.age = 21
+#
+# print(p1.name,p1.age,p2.name,p2.age) # xiaoming 10 lisi 21
+
+# def f(a,b,c):
+#     """
+#
+#     :param a:
+#     :param b:
+#     :param c:
+#     :return:
+#     """
+
+# a=1.01**3
+# b=0.99**2
+# print(a*b)
+
+
+# price_str=input('苹果的单价:')
+# weight_str=input('苹果的重量:')
+#
+# price=float(price_str)
+# weight=float(weight_str)
+# money=price*weight
+# print(money)
+
+
+# price_str=input('苹果的单价:')
+# weight_str=input('苹果的重量:')
+
+# price=float(input('苹果的单价:'))
+# weight=float(input('苹果的重量:'))
+# money=price*weight
+# print(money)
+
+# 格式化输出
+# name ='大明'
+# print('我的名字叫%s,请多多关照!'% name)
+# student_no=1
+# print('输出我的学号是%06d '%student_no)
+# scale=10
+# print('输出数据比例为 %0.2f%%'% scale)
+# price=9
+# weight=5
+# money=float(price*weight)
+# print('输出苹果单价%0.2f元/斤.购买了%0.2f斤,需要支付%0.2f元'%(price,weight,money))
+
+
+
+# '''if语句'''
+# age=18
+#
+# if age>18:
+#     print('满足18岁可以去嗨皮')
+#
+# else:
+#     print('不可以去嗨皮')
+
+# age=int(input('请输入年龄:'))
+# if age>18:
+#     print('满足18岁可以去嗨皮')
+# else:
+#     print('不可以去嗨皮')
+
+
+
+# '''逻辑运算  and or not'''
+# age=int(input('请输入年龄:'))
+# if age>=0 and age<=120:
+#     print('年龄正确')
+# else:
+#     print('年龄不正确')
+
+
+# python_score=60
+# c_score=57
+# if python_score >60 or c_score>60:
+#     print('考试通过')
+# else:
+#     print('考试不通过')
+
+# '''布尔型变量is_employee '''
+# is_employee=True
+# if not is_employee:
+#     print('非本公司人禁止入内')
+# else:
+#     print('本公司员工可以入内')
+
+
+# '''elif增加判断条件'''
+# holiday_name='平安夜'
+# if holiday_name=='情人节':
+#     print('买玫瑰')
+#     print('看电影')
+# elif holiday_name=='平安夜':
+#     print('买苹果')
+#     print('吃大餐')
+# elif holiday_name=='生日':
+#     print('买蛋糕')
+#     print('吃大餐')
+# else:
+#     print('每天都是节日啊')
+
+# '''if嵌套语句'''
+# has_ticket=True
+# knife_length=19
+# if has_ticket :
+#     print('车票检查通过,准备开始安检')
+#     if knife_length >20:
+#         print('刀太长了,有%d厘米'%knife_length)
+#         print('不允许上车')
+#     else:
+#         print('可以上车')
+# else:
+#     print('请先买票')
+
+# '''随机数'''
+# '''导入工具包 random 要放在代码前面做引入'''
+# '''石头1剪刀2布3'''
+# import random
+# player=int(input('玩家输入的拳:'))
+# computer=random.randint(1,3)
+#
+# print('玩家选择的拳头是%d-电脑出的拳头是%d'%(player,computer))
+# if ((player==1and computer==2)
+#         or (player==2and computer==3)
+#         or (player==3 and computer==1)):
+#      print('赢了')
+# elif (player==computer):
+#     print('平局')
+# else:
+#     print('输了')
+
+
+# '''循环'''
+# '''while'''
+# i=0
+# while i<3:
+#     '''希望在循环内执行的代码'''
+#     print('hello')
+#     '''处理计数器'''
+#     i+=1
+# print('查看循环结束后i=%d'%i)
+
+
+# '''计算0-100之和'''
+# i=0
+# sum=0
+# while i<=100:
+#     sum=sum+i
+#     i=i+1
+# print(`sum)
+
+# '''求0-100之间偶数之和'''
+# i=0
+# sum=0
+# while i<=100:
+#     '''判断数值是否为偶数'''
+#     if i%2==0:
+#         sum = sum + i
+#     i=i+1
+#
+# print('0-100偶数之和为%d'%sum)
+#
+#
+# '''求0-100之间奇数之和'''
+# i=0
+# sum=0
+# while i<=100:
+#     '''判断数值是否为偶数'''
+#     if i%2!=0:
+#         '''当满足if条件时,在进行累加操作'''
+#         sum = sum + i
+#     i=i+1
+#
+# print('0-100奇数之和为%d'%sum)
+
+
+# '''break某一条件满足时,退出循环,不在执行后续代码'''
+# '''定义一个计数变量'''
+# i=0
+# while i<10:
+#     '''break某一条件满足时,退出循环,不在执行后续代码'''
+#     '''i=3的时候  终止代码 '''
+#     if i==3:
+#         break
+#     print(i)
+#     i=i+1
+#
+
+
+# '''continue某一条件满足时,不执行后续重复代码'''
+# '''定义一个计数变量'''
+# i=0
+# while i<10:
+#     if i==3:
+#         '''注意再循环中使用continue,需要 确认循环计数是否修改'''
+#         '''否则会导致死循环'''
+#         i = i + 1
+#         continue
+#
+#     print(i)
+#     '''处理逻辑'''
+#     i=i+1
+
+# '''未修改计数 会导致死循环 '''
+# i=0
+# while i<10:
+#     if i==3:
+#        '''未进行计数修改,会导致死循环'''
+#         continue
+#
+#     print(i)
+#     '''处理逻辑'''
+#     i=i+1
+
+
+#
+# '''while嵌套'''
+# '''在控制台输入五行*  每行递增'''
+# '''定义一个计数器变量'''
+# row=1
+# while row<=5:
+#     print('*'*row)
+#     row+=1
+
+
+# '''(不想要print函数输入过后不需要换行的时候 需要总的print里面加上end='')'''
+# print('*',end='---')
+# print('*')
+
+
+# row=1
+# while row<=5:
+#     '''增加一个小的循环,专门负责当前行中,每一列的星星显示'''
+#     '''定一个计数器变量'''
+#     col=1
+#     while col<=row:
+#         print('*',end='')
+#         col=col+1
+#     '''这行代码的目的就是每行打印完之后换行'''
+#     print('')
+#     row+=1
+
+
+
+# '''九九乘法表'''
+# def ff():
+#     row=1
+#     while row<=9:
+#         col=1
+#         while col<=row:
+#             print('%d*%d=%d'%(col,row,col*row),end='\t')
+#             col=col+1
+#
+#         print('')
+#         row=row+1
+#
+#
+# ff()
+#
+# '''函数'''
+
+
+
+# def xiaosun(x,z,y=2):
+#     print(x+y+z)
+#
+# xiaosun(1,2,y=4)
+
+
