@@ -1,3 +1,4 @@
+
 # a = input('Please input your string: ')
 # sp = input('Please tell me how to split: ')
 # b = a.split(sp)
@@ -296,4 +297,44 @@ def monthday():
 # s=i[0]['b']
 # s[1]=44
 
-print(s)
+# print(s)
+
+#------------------------------------------------------------------------
+'''
+去除重复项
+第一段是正确的
+第二段是为了便于理解举得直观的例子
+第三段是出错的原始代码,不便于理解与说明
+'''
+def remlist():
+    i = ['xiaoli','xiaohong','xiaoli','xiaoli']
+    flag = 1
+    while flag == 1 :
+        if 'xiaoli' in i:
+            i.remove('xiaoli')
+        else:
+            flag = 2
+
+    print(i)
+
+
+def learn():
+    i = [1,2,3,4,5,6,7,8]
+    for b in i:
+        # print(b)
+        # print(i)
+        i.pop(-1)
+
+    print(i)
+
+
+def wrongcode():
+    #     0   1   2   3   4   5   6   7
+    i = ['z','z','z','z','z','z','z','z']
+
+    for b in i:
+        i.remove('z')
+
+    print(i)
+
+#------------------------------------------------------------------------
