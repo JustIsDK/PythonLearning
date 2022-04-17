@@ -37,18 +37,18 @@
 
 
 #---------------------------------------------
+def ifpwdright():
+    for i in range(3):
+        password = int(input("plesae write your password: "))
+        if password == 8888:
+            print("输出密码正确，成功进入系统")
+            break
+        else:
+            if i == 2:
+                print("你尝试次数已经最大，程序结束")
+            else:
+                print(f"密码错误，请重新输入，还剩{2-i}次机会")
 
-# for i in range(3):
-#     password = int(input("plesae write your password: "))
-#     if password == 8888:
-#         print("输出密码正确，成功进入系统")
-#         break
-#     else:
-#         if i == 2:
-#             print("你尝试次数已经最大，程序结束")
-#         else:
-#             print(f"密码错误，请重新输入，还剩{2-i}次机会")
-#
 
 #---------------------------------------------
 
@@ -56,11 +56,11 @@
 # lst = [i for i in range(1,10)]
 # lst2 = [i*2 for i in range(1,6)]
 # print(lst2)
-# def mymax(x,y):
-#     # 简单的写法
-#     m = x if x>y else y
-#     print(m)
-#
+def mymax(x,y):
+    # 简单的写法
+    m = x if x>y else y
+    print(m)
+
 # mymax(1,2)
 
 #---------------------------------------------
@@ -69,14 +69,14 @@
 内部函数包含对外部作用域的引用而非全局作用域的引用，该内部函数就是闭包函数
 """
 
-# def fun():
-#     name = 'jack'
-#     #这样的情况下，inner就是闭包函数
-#     def inner():
-#         print(name)
-#     print(inner.__closure__)
-#     # 在外面调用内部的inner该怎么用
-#     return inner
+def fun():
+    name = 'jack'
+    #这样的情况下，inner就是闭包函数
+    def inner():
+        print(name)
+    print(inner.__closure__)
+    # 在外面调用内部的inner该怎么用
+    return inner
 #
 # f = fun()
 # f() #==>inner()
@@ -91,10 +91,10 @@
 匿名函数-功能简单的一句话函数
 """
 
-# def fun(x):
-#     return x**x
-#
-# print(fun(3))
+def fun(x):
+    return x**x
+
+print(fun(3))
 
 # fun = lambda n:n**n
 #
@@ -107,30 +107,30 @@
 但是我们可以通过sys库的set方法来改变递归深度
 """
 
-# import sys
-# print(sys.setrecursionlimit(100000))
-# def f(n):
-#     print(n)
-#     n += 1
-#     f(n)
-# f(1)
-# def age(n):
-#     if n ==1:
-#         return 18
-#     else:
-#         return age(n-1)+2
-#
-# print(age(1))
+import sys
+print(sys.setrecursionlimit(100000))
+def f(n):
+    print(n)
+    n += 1
+    f(n)
+f(1)
+def age(n):
+    if n ==1:
+        return 18
+    else:
+        return age(n-1)+2
 
-# def fib(n):
-#     if n==1 or n==2:
-#         return n
-#     elif n>=3:
-#         return fib(n-1) + fib(n-2)
-#     else:
-#         return -1
-#
-# print(fib(5))
+print(age(1))
+
+def fib(n):
+    if n==1 or n==2:
+        return n
+    elif n>=3:
+        return fib(n-1) + fib(n-2)
+    else:
+        return -1
+
+print(fib(5))
 
 #---------------------------------------------
 
@@ -140,20 +140,20 @@
 不改变原函数的功能下增加功能
 """
 
-# import time
-#
-# def funny():
-#     time.sleep(1)
-#     print("It`s Funny")
-#
-#
-# def timer(fun):
-#     #这里就是闭包,返回的是inner函数
-#     def inner():
-#         start = time.time()
-#         fun()
-#         print(time.time()-start)
-#     return inner
+import time
+
+def funny():
+    time.sleep(1)
+    print("It`s Funny")
+
+
+def timer(fun):
+    #这里就是闭包,返回的是inner函数
+    def inner():
+        start = time.time()
+        fun()
+        print(time.time()-start)
+    return inner
 #
 # #这里调用timer传入的参数就是funny函数,返回的是inner函数
 # funny = timer(funny)
@@ -165,18 +165,18 @@
 如果使用装饰器的形式的话可以改成下面这样
 """
 
-# import time
-# def timer(fun):
-#     def inner():
-#         start = time.time()
-#         fun()
-#         print(time.time()-start)
-#     return inner
-#
-# @timer
-# def funny():
-#     time.sleep(1)
-#     print("It`s Funny")
+import time
+def timer(fun):
+    def inner():
+        start = time.time()
+        fun()
+        print(time.time()-start)
+    return inner
+
+@timer
+def funny():
+    time.sleep(1)
+    print("It`s Funny")
 #
 # funny()
 
@@ -186,14 +186,15 @@
 迭代器和生成器
 """
 
-# from _collections_abc import Iterable
-#
-# lst = [i for i in range(1,11)]
-# t = (1,2,3,4)
-# d = {1:2,3:4}
-# s = {1,2,3,4}
-#
-# print(isinstance(d,Iterable))
+from _collections_abc import Iterable
+
+def iterablepractise():
+    lst = [i for i in range(1,11)]
+    t = (1,2,3,4)
+    d = {1:2,3:4}
+    s = {1,2,3,4}
+
+    print(isinstance(d,Iterable))
 
 # 这样就能知道这个迭代器比普通的列表方法多出了那些方法
 # print(set(dir([1,2].__iter__()))-set(dir([1,2])))
@@ -207,15 +208,15 @@
 生成器函数 generator
 """
 
-# def fun():
-#     a = 1
-#     print('i have a')
-#     #和return的区别在于return会结束当前运行,后面的不会运行,而yield不会
-#     #有这个关键字就是生成器函数
-#     yield a
-#     b = 2
-#     print('i have b')
-#     yield b
+def fun():
+    a = 1
+    print('i have a')
+    #和return的区别在于return会结束当前运行,后面的不会运行,而yield不会
+    #有这个关键字就是生成器函数
+    yield a
+    b = 2
+    print('i have b')
+    yield b
 #
 # funny = fun()
 # print(funny)
@@ -223,16 +224,16 @@
 # print(next(funny))
 
 #---------------------------------------------
+def demo11():
+    s = 'aAsmr3idd4bgs7Dlsf9eAF'
 
-# s = 'aAsmr3idd4bgs7Dlsf9eAF'
-#
-# s1 = ''
-#
-# for i in s:
-#     if i.isdigit():
-#         s1 +=  i
-#
-# print(s1)
+    s1 = ''
+
+    for i in s:
+        if i.isdigit():
+            s1 +=  i
+
+    print(s1)
 
 
 #---------------------------------------------
@@ -290,10 +291,12 @@ def monthday():
 '''
 董小娜的练习
 '''
-# i = [{'a':1,'b':[11,22,33,55]},[111,222,333],{121,212,313,414}]
-# # s=i[1]
-# # s[1]=22
-# s=i[0]['b']
-# s[1]=44
+def practise():
+    i = [{'a':1,'b':[11,22,33,55]},[111,222,333],{121,212,313,414}]
+    # s=i[1]
+    # s[1]=22
+    s=i[0]['b']
+    s[1]=44
+    print(s)
 
-print(s)
+
