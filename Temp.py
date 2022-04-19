@@ -94,7 +94,6 @@ def fun():
 def fun(x):
     return x**x
 
-print(fun(3))
 
 # fun = lambda n:n**n
 #
@@ -108,19 +107,19 @@ print(fun(3))
 """
 
 import sys
-print(sys.setrecursionlimit(100000))
+# print(sys.setrecursionlimit(100000))
 def f(n):
     print(n)
     n += 1
     f(n)
-f(1)
+
 def age(n):
     if n ==1:
         return 18
     else:
         return age(n-1)+2
 
-print(age(1))
+
 
 def fib(n):
     if n==1 or n==2:
@@ -130,7 +129,7 @@ def fib(n):
     else:
         return -1
 
-print(fib(5))
+
 
 #---------------------------------------------
 
@@ -299,4 +298,7 @@ def practise():
     s[1]=44
     print(s)
 
-
+#以sep作为分隔符，将seq所有的元素合并成一个新的字符串
+# a = ['1','2','3','4','5']
+#
+# print(':'.join(a))
