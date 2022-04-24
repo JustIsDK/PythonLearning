@@ -12,11 +12,6 @@
 #
 # a = random.randint(00000000000000000,99999999999999999)
 # print(a)
-# import time
-#
-# now = time.time()
-#
-# print(now)
 
 # a = {1,2,3}
 # b = {2,3}
@@ -93,6 +88,7 @@ def fun():
 
 def fun(x):
     return x**x
+
 
 
 # fun = lambda n:n**n
@@ -298,7 +294,14 @@ def practise():
     s[1]=44
     print(s)
 
-#以sep作为分隔符，将seq所有的元素合并成一个新的字符串
-# a = ['1','2','3','4','5']
-#
-# print(':'.join(a))
+
+#------------------------------------------------------------------------
+
+from faker import Faker
+fake = Faker("zh_CN")
+def createfakerdata():
+    num1 = input('Please input how many date you want: ')
+    num = int(num1)
+    for i in  range(num):
+        a = fake.phone_number()
+        print(a)
