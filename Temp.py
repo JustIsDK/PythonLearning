@@ -294,7 +294,6 @@ def practise():
     s[1]=44
     print(s)
 
-
 #------------------------------------------------------------------------
 
 from faker import Faker
@@ -305,3 +304,36 @@ def createfakerdata():
     for i in  range(num):
         a = fake.phone_number()
         print(a)
+
+#------------------------------------------------------------------------
+'''
+索引题目测试用例设计
+其实也就是异常场景的思考
+'''
+
+def get_major(students):
+    return [student[1] for student in students]
+
+
+aa = ['1','22','333','456','89']
+# print(get_major(aa))
+
+#------------------------------------------------------------------------
+from requests_toolbelt.multipart.encoder import MultipartEncoder
+import requests
+def demo():
+    url = input()
+    body = MultipartEncoder(
+        {
+            'json':'jsonbody'
+        }
+    )
+    headers = {
+        'headers':'header'
+    }
+    #这里应该就是用自适应的方法来自动设置他的请求头类型
+    headers['Content-Type'] = body.content_type
+
+    res = requests.post(url,data=body,headers=headers)
+
+#------------------------------------------------------------------------

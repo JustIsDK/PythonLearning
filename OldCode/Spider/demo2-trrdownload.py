@@ -1,8 +1,9 @@
 import requests
 from bs4 import BeautifulSoup as bfs
 import  os
+import pytest
 
-
+@pytest.mark.parametrize()
 def firststep(url,headers,baseurl):
     r = requests.get(url=url, headers=headers)
     #请求url获取html

@@ -1,6 +1,7 @@
 import time
 def timestamp():
-    now = time.time()
+    now = int(time.time() * 1000)
+
 
     print(now)
 
