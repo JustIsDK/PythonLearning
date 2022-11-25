@@ -298,7 +298,110 @@ def practise():
     s[1]=44
     print(s)
 
-#以sep作为分隔符，将seq所有的元素合并成一个新的字符串
+# 以sep作为分隔符，将seq所有的元素合并成一个新的字符串
 # a = ['1','2','3','4','5']
 #
 # print(':'.join(a))
+
+#------------------------------------------------------------------------
+# import pytest
+# import requests
+# limit = [1,50,51]
+# tab = ['ask','job','share']
+# tab_limit_data=[]
+# for i in tab:
+#     for a in limit:
+#         ex_tab = i
+#         if a >=51:
+#             ex_limit = 50
+#         else:
+#             ex_limit = a
+#         tab_limit_data.append([i,a,ex_tab,ex_limit])
+# @pytest.mark.parametrize('tab,limit,ex_tab,ex_limit',tab_limit_data)
+# def test_topic(tab,limit,ex_tab,ex_limit):
+#     url = 'http://47.100.175.62:3000/api/v1/topics'
+#     body = {
+#         'tab':tab,
+#         'limit':limit
+#     }
+#     res = requests.get(url,params=body)
+#     print(res.json())
+#     for i in res.json()['data']:
+#         assert i['tab'] == ex_tab
+#     assert len(res.json()['data']) == ex_limit
+#     # print(tab,limit,ex_tab,ex_limit)
+
+
+#------------------------------------------------------------------------
+def pingshan():
+    a = [1,2,3,4,5,6,7,8,9,10]
+    b = []
+    for i in a:
+        if i%2 != 0 :
+            b.append(i)
+    print(b)
+
+#------------------------------------------------------------------------
+def phonenum():
+    a = [1,0,7,6,5,4,9,3]
+    b = [0,4,3,1,2,0,5,4,3,6,7]
+    c = []
+    d = '联系方式为: '
+    for i in b :
+        c.append(a[i])
+        d = d + str(a[i])
+    print(c)
+    print(d)
+
+# ------------------------------------------------------------------------
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+# x = Person("Bill", "Gates")
+# x.printname()
+
+# class Student(Person):
+#     pass
+# y=Student('yiyi','haha')
+# y.printname()
+# ------------------------------------------------------------------------
+for i in  range(5):
+    print(i)
+
+
+# ------------------------------------------------------------------------
+
+
+'''
+百度面试题
+生成器的知识
+g被赋值之后就是个生成器
+for循环中的g只是被赋值的状态,并没有被调用
+在最后的list(g)时才被调用,这个时候的g已经被赋值了3次
+且n也等于了5
+那么反过来拆三层g的调用,最里面一层的g = (add(5,i) for i in g)
+i的值为g生成的0 1 2 3,所以这一层的左侧g被赋值为 5 6 7 8
+且作为下一层的右边g,就变成n5  i 5 6 7 8
+得出 10 11 12 13赋值给左边g
+依此类推 n5 i 10 11 12 13
+得出最后 15 16 17 18
+'''
+def add(n,i):
+    return n+i
+    print(n,i,n+i)
+
+def test():
+    for i in range(4):
+        yield i
+
+g = test()
+
+for n in [10,1,5]:
+    g = (add(n,i) for i in g)
+print(list(g))
+

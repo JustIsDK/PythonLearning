@@ -28,7 +28,7 @@ while Phone == 1:
         "sec-ch-ua-platform":'"Windows"',
         "sec-ch-ua":'"Chromium";v="94", "Google Chrome";v="94", ";Not A Brand";v="99"'
     }
-    r = requests.get(url=url, headers=header)
+    r = requests.get(url=url, headers=header,params=)
 
     text = r.json()['body']['PickupMessage']['notAvailableNearby']
     texts = str(text)
