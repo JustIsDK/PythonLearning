@@ -22,30 +22,31 @@ def blf():#布洛芬库存查询
 
    num = response.json()['data']['goodsData']['skuInfo']['skuStocks'][0]["stockNum"]
    title = response.json()['data']['goodsData']['goods']['title']
-   return num,title
+   return num,title  #返回库存数量和标题名称
 
 
 def send_wechat(msg,title):#一对一推送
-   token = '2c7c606fa2b944558c709e7b877ee6b6'  # 前边复制到那个token
+   token = '2c7c606fa2b944558c709e7b877ee6b6'  # 推送后台的token
    title = title
    content = msg
    template = 'html'
    url = f"https://www.pushplus.plus/send?token={token}&title={title}&content={content}&template={template}"
-   print(url)
    r = requests.get(url=url)
-   print(r.text)
+   if r.json()['code'] == 200:
+      print('信息发送成功\n')
 
 
 def send_wechats(msg,title):#一对多推送
-   token = '2c7c606fa2b944558c709e7b877ee6b6'  # 前边复制到那个token
+   token = '2c7c606fa2b944558c709e7b877ee6b6'  # 推送后台的token
    title = title
    content = msg
    template = 'html'
-   topic = '123456'
+   topic = '123456'  #群组编号
    url = f"http://www.pushplus.plus/send?token={token}&title={title}&content={content}&template={template}&topic={topic}"
-   print(url)
    r = requests.get(url=url)
-   print(r.text)
+   if r.json()['code'] == 200 :
+      print('信息发送成功\n')
+
 
 # send_wechat('测试消息')
 
@@ -54,13 +55,13 @@ while flag == True:
    result = blf()[0] #返回库存
    res = int(result) #类型转换,py 实际不用这么做也行
    if res >1000: #大库存才发提醒
-      title = f'修正小程序搜索: {blf()[1][0:14]} ,外观是白盒+红人'
+      title = f'修正小程序搜索: {blf()[1][0:6]} ,外观是白盒+红人'
       msg = (f'这次是另一种布洛芬,外盒是白色,封面有红色人物轮廓\n'
              f"这次放出了 {res} 的库存\n"
-             f"轮询会休息五分钟,然后开始下一次的轮询~\n "
+             f"轮询会休息30分钟,然后开始下一次的轮询~\n "
              f"抢药全凭本事,祝君好运~~~~~")
       send_wechats(msg,title)
-      timesleep = 300
+      timesleep = 1800
       print(f"休息 {timesleep} 秒\n")
       time.sleep(timesleep)
       # flag = False
