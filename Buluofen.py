@@ -20,9 +20,13 @@ def blf():#布洛芬库存查询
 
    response = requests.request("GET", url, headers=headers, data=payload)
 
+   # print(response.json())
+
    num = response.json()['data']['goodsData']['skuInfo']['skuStocks'][0]["stockNum"]
    title = response.json()['data']['goodsData']['goods']['title']
    return num,title  #返回库存数量和标题名称
+
+# blf()
 
 
 def send_wechat(msg,title):#一对一推送

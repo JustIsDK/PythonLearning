@@ -396,13 +396,19 @@ def add(n,i):
     return n+i
     print(n,i,n+i)
 
-def test():
-    for i in range(4):
-        yield i
+# def test():
+#     for i in range(4):
+#         yield i
+#
+# g = test()
+#
+# for n in [10,1,5]:
+#     g = (add(n,i) for i in g)
+# print(list(g))
 
-g = test()
-
-for n in [10,1,5]:
-    g = (add(n,i) for i in g)
-print(list(g))
-
+s =''
+a = s.split('、')
+man = 0
+for i in a:
+    man+=1
+print(man)
