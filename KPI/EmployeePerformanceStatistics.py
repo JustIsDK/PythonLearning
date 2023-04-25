@@ -337,12 +337,12 @@ class PerformanceStatistics:
             start_date = self.start_date
         if not end_date:
             end_date = self.end_date
-        api = FeishuAPI("7107077857691598851", "MII_62132ACCAC40C121", "83106195B346361F8774AA462D042399", 0)
+        api = FeishuAPI("7107077857691598851", "MII_6440B08E41848001", "443A864F59B968B821B43E599E57D860", 0)
         bugs = api.statistics_each_reporter_bugs(start_date, end_date)
         print(bugs)
         with open('config.yml', encoding='utf8') as f:
             config = yaml.safe_load(f)
-        url = "https://main-test.lilithgames.com/api/testcase/statistic/count/history/user/PlatformTest"
+        url = "https://main.lilithgames.com/api/testcase/statistic/count/history/user/PlatformTest"
         headers = {'content-type': 'application/json;charset=UTF-8', 'jwt': config['jwt']}
         payload = f'{{"projectId":"PlatformTest","emailList":[],"userGroupList":[2],"startTime":"{start_date}"' \
                   f',"endTime":"{end_date}"}}'
@@ -392,7 +392,7 @@ class PerformanceStatistics:
         if not end_date:
             end_date = self.end_date
         # 从飞书meego拉缺陷数据
-        api = FeishuAPI("7107077857691598851", "MII_62132ACCAC40C121", "83106195B346361F8774AA462D042399", 0)
+        api = FeishuAPI("7107077857691598851", "MII_6440B08E41848001", "443A864F59B968B821B43E599E57D860", 0)
         bugs = api.statistics_each_reporter_bugs(start_date, end_date)
         print(bugs)
 
@@ -405,7 +405,7 @@ class PerformanceStatistics:
         for k, v in people.items():
             emails.append(k)
             names.append(v)
-        url = "https://main-test.lilithgames.com/api/testcase-xmind/workload/type/statistic"
+        url = "https://main.lilithgames.com/api/testcase-xmind/workload/type/statistic"
         headers = {'content-type': 'application/json'}
         user_data = []
         case_data = {}
@@ -497,7 +497,7 @@ class PerformanceStatistics:
 
 
 if __name__ == "__main__":
-    p = PerformanceStatistics('2023-3-27', '2023-4-16')
+    p = PerformanceStatistics('2023-4-1', '2023-4-24')
     data = p.get_user_data_by_date_from_xmind_platform()
     p.create_csv_for_xmind_platform(data)
 
