@@ -497,7 +497,7 @@ class PerformanceStatistics:
 
 
 if __name__ == "__main__":
-    p = PerformanceStatistics('2023-4-1', '2023-4-24')
+    p = PerformanceStatistics('2023-5-1', '2023-5-18')
     data = p.get_user_data_by_date_from_xmind_platform()
     p.create_csv_for_xmind_platform(data)
 

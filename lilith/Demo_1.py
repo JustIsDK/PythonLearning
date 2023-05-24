@@ -79,41 +79,9 @@ def plusOne(digits:list[int]) -> list[int]:
 
 
 
-projectList = ["https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=998&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=969&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=967&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=962&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=961&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=960&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=959&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=958&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=957&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=916&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=915&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=914&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=913&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=912&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=911&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=910&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=909&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=908&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=907&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=906&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=905&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=904&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=903&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=902&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=901&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=900&planStatus=2",
-"https://testcase-xmind.lilithgames.com/View?allCaseNum=6&planId=889&planStatus=2"]
-import re
-from urllib.parse import urlparse, parse_qs
-def getId(url):
-    parsed_url = urlparse(url)
-    query_params = parse_qs(parsed_url.query)
-    plan_id = query_params.get("planId", [])[0]
-    return int(plan_id)
-
+'''
+批量获取测试计划名称
+'''
 def getPlanName(projectId):
     url = f"https://main.lilithgames.com/api/testcase-xmind/plan/info/{projectId}?projectId=PlatformTest"
 
@@ -132,6 +100,20 @@ def getPlanName(projectId):
 
     print(response.json()['data']['planName'])
 
+list = {
+1057,
+1072,
+1119,
+1142,
+1154,
+1175
+        }
 
-# for i in projectList:
-#     getPlanName(getId(i))
+# for i in list:
+#     getPlanName(i)
+
+
+for i in range(1, 10):
+    for j in range(1, i+1):
+        print('{}x{}={}\t'.format(j, i, i*j), end='')
+    print('')
