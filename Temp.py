@@ -369,13 +369,8 @@ class Person:
 #     pass
 # y=Student('yiyi','haha')
 # y.printname()
-# ------------------------------------------------------------------------
-for i in  range(5):
-    print(i)
-
 
 # ------------------------------------------------------------------------
-
 
 '''
 百度面试题
@@ -406,9 +401,180 @@ def add(n,i):
 #     g = (add(n,i) for i in g)
 # print(list(g))
 
-s =''
-a = s.split('、')
-man = 0
-for i in a:
-    man+=1
-print(man)
+# s =''
+# a = s.split('、')
+# man = 0
+# for i in a:
+#     man+=1
+# print(man)
+
+
+'''
+编写一个函数，接受一个字符串作为参数，然后返回该字符串中每个单词的反转字符串。例如，输入"Hello World"，输出"olleH dlroW"。
+'''
+text = 'Hello world'
+def reverse_word(words):
+    words_list = words.split(' ')
+    reverse_word_list = [word[::-1] for word in b]
+    print(' '.join(c))
+
+
+'''
+输入描述：
+输入第一行为一个正整数n(1≤n≤1000),下面n行为n个字符串(字符串长度≤100),字符串中只含有大小写字母。
+输出描述：
+数据输出n行，输出结果为按照字典序排列的字符串。
+单字母可以,多字母的字符串就失效
+在 sort 中加上  key=str.lower  可以解决这个问题
+'''
+def sort_string():
+    total_line = input('请输入行数: ')
+    sum_list = []
+    for i in range(int(total_line)):
+        sum_list.append(input('请输入字符,仅限英文大小写: '))
+    sum_list.sort(key=str.lower)
+    for i in sum_list:
+        print(i)
+
+
+'''
+输入一个 int 型的正整数，计算出该 int 型数据在内存中存储时 1 的个数。
+'''
+def calc_binary(numbers):
+    num_bin = bin(numbers)
+    print(num_bin.count('1'))
+
+
+'''
+计算字符串最后一个单词的长度，单词以空格隔开，字符串长度小于5000。（注：字符串末尾不以空格为结尾）
+'''
+def calc_last_string():
+    new_string = input('Please input your string: ')
+    new_list = new_string.split()
+    print(len(new_list[-1]))
+
+
+'''
+写出一个程序，接受一个由字母、数字和空格组成的字符串，和一个字符，然后输出输入字符串中该字符的出现次数。（不区分大小写字母）
+'''
+def calc_target_num():
+    new_string = input().lower()
+    target = input().lower()
+    print(new_string.count(target))
+
+'''
+明明生成了
+N个1到500之间的随机整数。请你删去其中重复的数字，即相同的数字只保留一个，
+把其余相同的数去掉，然后再把这些数从小到大排序，按照排好的顺序输出。
+'''
+def set_list():
+    num_amount = int(input())
+    first_list = []
+    for i in range(int(num_amount)):
+        first_list.append(input())
+    second_list = set(first_list)
+    second_list = list(second_list)
+    for i in range(len(second_list)):
+        second_list[i] = int(second_list[i])
+    second_list.sort()
+    for i in second_list:
+        print(i)
+
+
+'''
+•输入一个字符串，请按长度为8拆分每个输入字符串并进行输出；
+•长度不是8整数倍的字符串请在后面补数字0，空字符串不处理。
+'''
+def split_string():
+    new_string = input()
+    if new_string != '':
+        if len(new_string)%8 != 0:
+            new_string += '0'* (8 - len(new_string)%8)
+        split_string = [new_string[i:i+8] for i in range(0,len(new_string),8)]
+        after_string = ''
+        for i in split_string:
+            print(i)
+    else:
+        pass
+
+
+'''
+写出一个程序，接受一个十六进制的数，输出该数值的十进制表示。
+int(s,16)  16->10 进制
+'''
+def tentosix():
+    i = input()
+    print(int(i,16))
+
+
+'''
+输入一个正整数，按照从小到大的顺序输出它的所有质因子（重复的也要列举）（如180的质因子为2 2 3 3 5 )
+'''
+def split_number():
+    num = int(input())
+    newnum = num
+    for i in range(2,newnum):
+        while newnum % i == 0:
+            print(i,end=' ')
+            newnum = newnum // i
+
+'''
+写出一个程序，接受一个正浮点数值，输出该数值的近似整数值。如果小数点后数值大于等于 0.5 ,向上取整；小于 0.5 ，则向下取整。
+直接取 int 的话,会忽略后面的小数,所以加上 0.5,如果本身小数部分已经大于等于 0.5,那么加上之后就会往上加一个数,这样取整之后就是向上取整了
+'''
+def rounding():
+    num = float(input())
+    num = int(num+0.5)
+    print(num)
+
+
+'''
+数据表记录包含表索引index和数值value（int范围的正整数）
+请对表索引相同的记录进行合并，即将相同索引的数值进行求和运算
+输出按照index值升序进行输出。
+先输入键值对的个数n（1 <= n <= 500）
+接下来n行每行输入成对的index和value值，以空格隔开
+'''
+def mergelist():
+    num = int(input())
+    targetlist = []
+    for i in range(num):
+        string = input()
+        stringlist = string.split(' ')
+        targetlist.append(stringlist)
+    for i in range(0,len(targetlist)-1):
+        for j in range(i+1,len(targetlist)-1):
+            if targetlist[i][0] == targetlist[j][0]:
+                firstnum = int(targetlist[i][1])
+                secondnum = int(targetlist[j][1])
+                firstnum = firstnum + secondnum
+                targetlist[i][1] = str(firstnum)
+                targetlist.remove(targetlist[j])
+    targetlist.sort()
+    for i in range(len(targetlist)):
+        print(targetlist[i][0],targetlist[i][1])
+
+'''
+输入一个 int 型整数，按照从右向左的阅读顺序，返回一个不含重复数字的新的整数。
+保证输入的整数最后一位不是 0 。
+'''
+def reversenum():
+    num = input()
+    newlist = [i for i in num]
+    if newlist[-1] == '0':
+        print('over')
+    else:
+        newlist = newlist[::-1]
+        newlist2 = []
+        for i in newlist:
+            if i not in newlist2:
+                newlist2.append(i)
+        newstring = ''
+        for i in range(len(newlist2)):
+            newstring += newlist2[i]
+        print(newstring)
+
+
+
+
+
