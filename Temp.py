@@ -17,6 +17,8 @@
 # now = time.time()
 #
 # print(now)
+import json
+
 
 # a = {1,2,3}
 # b = {2,3}
@@ -510,13 +512,16 @@ def tentosix():
 '''
 输入一个正整数，按照从小到大的顺序输出它的所有质因子（重复的也要列举）（如180的质因子为2 2 3 3 5 )
 '''
+import math
 def split_number():
     num = int(input())
     newnum = num
-    for i in range(2,newnum):
+    for i in range(2,int(math.sqrt(newnum))+1):
         while newnum % i == 0:
             print(i,end=' ')
             newnum = newnum // i
+    if newnum != 1:
+        print(newnum)
 
 '''
 写出一个程序，接受一个正浮点数值，输出该数值的近似整数值。如果小数点后数值大于等于 0.5 ,向上取整；小于 0.5 ，则向下取整。
@@ -536,23 +541,20 @@ def rounding():
 接下来n行每行输入成对的index和value值，以空格隔开
 '''
 def mergelist():
-    num = int(input())
-    targetlist = []
-    for i in range(num):
-        string = input()
-        stringlist = string.split(' ')
-        targetlist.append(stringlist)
-    for i in range(0,len(targetlist)-1):
-        for j in range(i+1,len(targetlist)-1):
-            if targetlist[i][0] == targetlist[j][0]:
-                firstnum = int(targetlist[i][1])
-                secondnum = int(targetlist[j][1])
-                firstnum = firstnum + secondnum
-                targetlist[i][1] = str(firstnum)
-                targetlist.remove(targetlist[j])
-    targetlist.sort()
-    for i in range(len(targetlist)):
-        print(targetlist[i][0],targetlist[i][1])
+    n = int(input())
+    dic = {}
+
+    # idea: 动态建构字典
+    for i in range(n):
+        line = input().split()
+        key = int(line[0])
+        value = int(line[1])
+        dic[key] = dic.get(key, 0) + value  # 累积key所对应的value
+
+    for each in sorted(dic):  # 最后的键值对按照升值排序
+        print(each, dic[each])
+
+
 
 '''
 输入一个 int 型整数，按照从右向左的阅读顺序，返回一个不含重复数字的新的整数。
@@ -573,6 +575,313 @@ def reversenum():
         for i in range(len(newlist2)):
             newstring += newlist2[i]
         print(newstring)
+
+
+'''
+编写一个函数，计算字符串中含有的不同字符的个数。字符在 ASCII 码范围内( 0~127 ，包括 0 和 127 )
+换行表示结束符，不算在字符里。不在范围内的不作统计。多个相同的字符只计算一次
+例如，对于字符串 abaca 而言，有 a、b、c 三种不同的字符，因此输出 3 。
+'''
+def calcstringnum():
+    cstring = input()
+    cstring = list(set(list(cstring)))
+    print(len(cstring))
+
+
+'''
+输入一个整数，将这个整数以字符串的形式逆序输出
+程序不考虑负数的情况，若数字含有0，则逆序形式也含有0，如输入为100，则输出为001
+'''
+def reversestring():
+    newstring = input()
+    print(newstring[::-1])
+
+
+'''
+将一个英文语句以单词为单位逆序排放。例如“I am a boy”，逆序排放后为“boy a am I”
+所有单词之间用一个空格隔开，语句中除了英文字母外，不再包含其他字符
+'''
+def reversesentence():
+    sentence = input()
+    sentence = sentence.split(' ')
+    sentence.reverse()
+    print(' '.join(sentence))
+
+
+
+'''
+王强决定把年终奖用于购物，他把想买的物品分为两类：主件与附件，附件是从属于某个主件的，下表就是一些主件与附件的例子：
+主件	附件
+电脑	打印机，扫描仪
+书柜	图书
+书桌	台灯，文具
+工作椅	无
+
+如果要买归类为附件的物品，必须先买该附件所属的主件，且每件物品只能购买一次。
+每个主件可以有 0 个、 1 个或 2 个附件。附件不再有从属于自己的附件。
+王强查到了每件物品的价格（都是 10 元的整数倍），而他只有 N 元的预算。除此之外，他给每件物品规定了一个重要度，
+用整数 1 ~ 5 表示。他希望在花费不超过 N 元的前提下，使自己的满意度达到最大。
+满意度是指所购买的每件物品的价格与重要度的乘积的总和.
+
+输入描述：
+输入的第 1 行，为两个正整数N，m，用一个空格隔开：
+（其中 N （ N<32000 ）表示总钱数， m （m <60 ）为可购买的物品的个数。）
+从第 2 行到第 m+1 行，第 j 行给出了编号为 j-1 的物品的基本数据，每行有 3 个非负整数 v p q
+（其中 v 表示该物品的价格（ v<10000 ）， p 表示该物品的重要度（ 1 ~ 5 ）， q 表示该物品是主件还是附件。
+如果 q=0 ，表示该物品为主件，如果 q>0 ，表示该物品为附件， q 是所属主件的编号）
+'''
+def calchapppy():
+    moneyandcount = input().split()
+    productlist = {}
+    for i in range(1,int(moneyandcount[1])+1):
+        productlist[i] = input().split()
+    maindict = {}
+    sidedict = {}
+    for key,value in  productlist.items():
+        if productlist[key][2] =='0':
+            maindict[key] = productlist[key]
+        else:
+            sidedict[key] = productlist[key]
+
+
+
+'''
+开发一个坐标计算工具， A表示向左移动，D表示向右移动，W表示向上移动，S表示向下移动。从（0,0）点开始移动，从输入字符串里面读取一些坐标，并将最终输入结果输出到输出文件里面。
+
+输入：
+
+合法坐标为A(或者D或者W或者S) + 数字（两位以内）
+
+坐标之间以;分隔。
+
+非法坐标点需要进行丢弃。如AA10;  A1A;  $%$;  YAD; 等。
+
+下面是一个简单的例子 如：
+
+A10;S20;W10;D30;X;A1A;B10A11;;A10;
+
+处理过程：
+
+起点（0,0）
+
++   A10   =  （-10,0）
+
++   S20   =  (-10,-20)
+
++   W10  =  (-10,-10)
+
++   D30  =  (20,-10)
+
++   x    =  无效
+
++   A1A   =  无效
+
++   B10A11   =  无效
+
++  一个空 不影响
+
++   A10  =  (10,-10)
+
+结果 （10， -10）
+'''
+
+def calccoord():
+    input_list = input().split(';')
+    initial = [0,0]
+    for item in input_list:
+        if not 2<= len(item) <=3:
+            continue
+
+        try:
+            direction = item[0]
+            step = int(item[1:])
+            if 0<= step <=99:
+                match direction:
+                    case 'A':
+                        initial[0] -= step
+                    case 'D':
+                        initial[0] += step
+                    case 'W':
+                        initial[1] += step
+                    case 'S':
+                        initial[1] -= step
+        except:
+            continue
+    print(initial)
+
+
+'''
+取列表中相差最大的两个值
+'''
+def calc_num():
+    list = [1, 2, 4, 7, 6, 5, 8]
+    result = {}
+    for i in range(len(list) - 1):
+        for j in range(i + 1, len(list)):
+            keys = abs(list[i] - list[j])
+            result[keys] = [i, j]
+    maxkey = max(result.keys())
+    print(result[maxkey])
+
+
+'''
+密码要求:
+
+1.长度超过8位
+
+2.包括大小写字母.数字.其它符号,以上四种至少三种
+
+3.不能有长度大于2的包含公共元素的子串重复 （注：其他符号不含空格或换行）
+
+如果符合要求输出：OK，否则输出NG
+
+'''
+def pwdcheck():
+    pwd = input()
+    if  len(pwd) <= 8:
+        return False
+    checks = [0,0,0,0]
+    for item in pwd:
+        if item.isupper():
+            checks[0] = 1
+        if item.islower():
+            checks[1] = 1
+        if item.isdigit():
+            checks[2] = 1
+        else:
+            checks[3] = 1
+    if sum(checks) < 3:
+        return False
+
+    for i in range(len(pwd)-2):
+        if pwd[i:i+3] in pwd[i+3:]:
+            return False
+
+    return True
+
+# while True:
+#     try :
+#         if pwdcheck() :
+#             print ('OK')
+#         else:
+#             print('NG')
+#     except:
+#         break
+
+
+
+'''
+现在有一种密码变换算法。
+九键手机键盘上的数字与字母的对应： 1--1， abc--2, def--3, ghi--4, jkl--5, mno--6, pqrs--7, tuv--8 wxyz--9, 0--0，
+把密码中出现的小写字母都变成九键键盘对应的数字，如：a 变成 2，x 变成 9.
+而密码中出现的大写字母则变成小写之后往后移一位，如：X ，先变成小写，再往后移一位，变成了 y ，例外：Z 往后移是 a 。
+数字和其它的符号都不做变换。
+'''
+def pwdchange():
+    pwd = input()
+    keyboard = {'1':1,'abc':2,'def':3,'ghi':4,'jkl':5,'mno':6,'pqrs':7,'tuv':8,'wxyz':9,'0':0}
+    pwdlist = list(pwd)
+    for item in range(len(pwdlist)):
+        for i in keyboard.keys():
+            try:
+                if pwdlist[item] in i:
+                    pwdlist[item] = str(keyboard[i])
+            except:
+                continue
+        else:
+            try:
+                if pwdlist[item].isupper():
+                    if pwdlist[item] == 'Z':
+                        pwdlist[item] = 'a'
+                    else:
+                        pwdlist[item] = chr(ord(pwdlist[item].lower()) + 1)
+            except:
+                continue
+    print(''.join(pwdlist))
+
+
+'''
+某商店规定：三个空汽水瓶可以换一瓶汽水，允许向老板借空汽水瓶（但是必须要归还）。
+小张手上有n个空汽水瓶，她想知道自己最多可以喝到多少瓶汽水。
+输入文件最多包含 10 组测试数据，每个数据占一行，仅包含一个正整数 n（ 1<=n<=100 ），表示小张手上的空汽水瓶数。
+n=0 表示输入结束，你的程序不应当处理这一行。
+对于每组测试数据，输出一行，表示最多可以喝的汽水瓶数。如果一瓶也喝不到，输出0。
+'''
+def drink():
+    while True:
+        try:
+            n = int(input())
+            if n == 0:
+                break
+            else:
+                print(n//2)
+        except:
+            break
+
+
+'''
+zhixi 在线导图收藏
+结论一:gpt3.5 不行
+结论二:这个接口隐藏的校验不太容易发现,走了很多弯路
+'''
+import requests
+import json
+def zhixicollect():
+    liststring = """
+    0c1db3f3,
+    bff69860,
+    17246c41,
+    e316996f,
+    b32de725,
+    00158f08,
+    eaac13eb,
+    fd58ddc8,
+    0b119eb0,
+    b999fcb3,
+    81c1fa46,
+    de4df90b,
+    807f3a98,
+    a668df52,
+    22bd58c3,
+    11e2cb54,
+    9aaefe08,
+    67362ff4
+    """
+
+    liststring = liststring.split(',')
+    for i in liststring:
+        i = i.strip()
+        url = "https://www.zhixi.com/api/v1/share/collect"
+
+        payload = json.dumps({"share_id": i, "password": ""})
+
+        headers = {
+            "authority": "www.zhixi.com",
+            "accept": "application/json",
+            "accept-language": "zh-CN,zh;q=0.9",
+            "appid": "80001001",
+            "authorization": "Bearer 1c2314d5a1fb9d63e30aada8643c40db",
+            "cache-control": "no-cache",
+            "content-type": "application/json;charset=UTF-8",
+            "eagleeye-pappname": "b134mice77@4c48294a4d49329",
+            "eagleeye-sessionid": "splvti0Ludb0RmokmpIjjq2byh9y",
+            "eagleeye-traceid": "5d19721a1686644704349100949329",
+            "origin": "https://www.zhixi.com",
+            "pragma": "no-cache",
+            "referer": f"https://www.zhixi.com/view/{i}",
+            "sec-ch-ua": '"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"',
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": '"macOS"',
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "same-origin",
+            "user-agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36'
+        }
+
+        response = requests.request("POST", url, headers=headers, data=payload)
+
+        print(response.status_code, response.reason, response.text)
+
 
 
 
